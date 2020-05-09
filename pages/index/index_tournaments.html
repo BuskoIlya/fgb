@@ -1,0 +1,30 @@
+<script>
+    $(document).ready(function () {
+        for (let i = 0; i < tournaments_2020.length; i++) {
+            $('#tournament_template').tmpl(tournaments_2020[i]).appendTo('#tournament_list');
+        }
+    });
+</script>
+
+<script type='text/x-jquery-tmpl' id='tournament_template'>
+  <div class="main_tournament_css">
+    <p>
+      <small>
+        <span class="glyphicon glyphicon-calendar" aria-hidden="true"></span>
+        ${date}
+        <span class="glyphicon glyphicon-ok-circle ${is_finished}"
+            style="float: right; font-size: 16px"
+          aria-hidden="true"></span>
+      </small>
+      <br>
+      <a href="" class="color_fill ${type}" style="margin: 5px">
+        ${name}</a>
+      <br>
+      <i>${city}</i>
+    </p>
+  </div>
+
+</script>
+
+<div id="tournament_list">
+</div>

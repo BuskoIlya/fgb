@@ -1,0 +1,81 @@
+<script>
+    $(document).ready(function () {
+        for (let i = 0; i < news_2020.length; i++) {
+            if (news_2020[i].img != '') {
+                $('#news_template').tmpl(news_2020[i]).appendTo('#news_list');
+            } else {
+                $('#match_template').tmpl(news_2020[i]).appendTo('#news_list');
+            }
+        }
+    });
+</script>
+
+<script type='text/x-jquery-tmpl' id='news_template'>
+  <div class="main_news_info_css row">
+    <div class="col-md-12">
+      <div class="block">
+        <div class="news_data">
+          <div class="news_img">
+            <a><img src=${img}></a>
+          </div>
+          <div class="news_info">
+            <p><small class="news_date">
+              <span class="glyphicon glyphicon-calendar" aria-hidden="true"></span>${date}
+            </small></p>
+            <p><a href="" class="news_title color_fill ${type}">${title}</a></p>
+            <p class="news_text text-justify">${description}</p>
+          </div>
+        </div>
+        <div class="news_footer">
+          <div class="footer_ul">
+            <small class="footer_ul_li">
+              <span class="glyphicon glyphicon-user" aria-hidden="true">
+                ${author}
+              </span>
+            </small>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</script>
+
+<script type='text/x-jquery-tmpl' id='match_template'>
+  <div class="countries_match_info_css row">
+    <div class="col-md-12">
+      <div class="countries_match_block">
+        <p class="countries_match_info">
+          <p><small class="countries_match_date">
+            <span class="glyphicon glyphicon-calendar" aria-hidden="true"></span>${date}
+          </small></p>
+          <p><a href="" class="countries_match_title color_fill ${type}">${title}
+          </a></p>
+        </p>
+        <div class="countries_match_data">
+          <div class="countries_match_img">
+            <p><img src=${flag1} alt=""></p>
+            <p>${name1}</p>
+            <p>${score1}</p>
+          </div>
+          <div class="countries_match_img">
+            <p><img src=${flag2} alt=""></p>
+            <p>${name2}</p>
+            <p>${score2}</p>
+          </div>
+        </div>
+        <div class="countries_match_footer">
+          <div class="footer_ul">
+            <small class="footer_ul_li">
+              <span class="glyphicon glyphicon-user" aria-hidden="true">
+                ${author}
+              </span>
+            </small>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</script>
+
+<div id="news_list">
+</div>
