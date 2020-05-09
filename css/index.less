@@ -1,4 +1,5 @@
 @import "constants.less";
+@import "common_elements";
 
 body {
   background: #fefdf1;
@@ -142,6 +143,224 @@ body {
   }
   100% {
     transform: translate(-100%, 0)
+  }
+}
+
+// -------------------------------------
+// Информационная часть главной страницы
+// -------------------------------------
+.main_info {
+  width: @window_width;
+
+  h1 {
+    .panel_title;
+    margin: 0;
+    margin-left: 10px;
+    margin-bottom: 25px;
+    border-radius: 3px;
+    width: 230px;
+  }
+
+  .news_block {
+    width: @width_left;
+    padding-top: 15px;
+  }
+
+  .tournaments_block {
+    width: @width_right;
+    padding-top: 15px;
+    border-left: @border_block;
+  }
+}
+
+.main_news_info_css {
+  width: 650px;
+  margin: 0;
+  margin-bottom: 25px;
+  padding: 0;
+
+  .block {
+    margin: 0 0 15px 0;
+    -webkit-transition: all .3s linear;
+    transition: all .3s linear;
+    position: relative;
+    cursor: default;
+    border-radius: 2px;
+    border: @inner_block_border;
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+
+    &:hover {
+      box-shadow: @box_shadow_block;
+    }
+
+    .news_data {
+      padding: 15px;
+    }
+
+    .news_img {
+      display: table-cell;
+      width: 250px;
+
+      img {
+        width: 100%;
+      }
+    }
+
+    .news_info {
+      display: table-cell;
+      vertical-align: top;
+      padding-left: 15px;
+
+      .news_title {
+        font-size: @fs_menu_panel_title;
+      }
+
+      .news_text {
+        font-size: @fs_text;
+      }
+
+      .news_date {
+        font-size: @fs_a_text;
+        margin-bottom: 5px;
+      }
+    }
+
+    .footer_ul {
+      text-align: right;
+      width: 100%;
+      margin: 0;
+      padding: 10px 5px;
+      display: block;
+      background: #fcfcfc;
+      border-top: @inner_block_border;
+    }
+
+    .news_footer ul {
+      .footer_ul;
+      padding: 0;
+    }
+
+    .footer_ul_li {
+      padding: 15px 10px;
+      vertical-align: middle;
+      border-left: @inner_block_border;
+    }
+
+    .news_footer ul li {
+      .footer_ul_li;
+      display: table-cell;
+    }
+  }
+}
+
+.countries_match_info_css {
+  width: 650px;
+  margin: 0;
+  margin-bottom: 25px;
+  padding: 0;
+
+  .countries_match_block {
+    margin: 0 0 15px 0;
+    -webkit-transition: all .3s linear;
+    transition: all .3s linear;
+    position: relative;
+    cursor: default;
+    border-radius: 2px;
+    border: @inner_block_border;
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    text-align: center;
+
+    &:hover {
+      box-shadow: @box_shadow_block;
+    }
+
+    .countries_match_data {
+      padding: 10px 45px;
+    }
+
+    .countries_match_img {
+      display: table-cell;
+      width: 295px;
+
+      img {
+        width: 160px;
+        height: 85px;
+        margin: 0px 30px;
+      }
+    }
+
+    .countries_match_info {
+      display: table-cell;
+      margin: 0;
+      padding-top: 10px;
+
+      .countries_match_title {
+        font-size: @fs_menu_panel_title;
+      }
+
+      .countries_match_date {
+        font-size: @fs_a_text;
+      }
+    }
+
+    .footer_ul {
+      text-align: right;
+      width: 100%;
+      margin: 0;
+      padding: 10px 5px;
+      display: block;
+      background: #fcfcfc;
+      border-top: @inner_block_border;
+    }
+
+    .countries_match_footer ul {
+      .footer_ul;
+      padding: 0;
+    }
+
+    .footer_ul_li {
+      padding: 15px 10px;
+      vertical-align: middle;
+      border-left: @inner_block_border;
+    }
+
+    .countries_match_footer ul li {
+      .footer_ul_li;
+      display: table-cell;
+    }
+  }
+}
+
+.main_tournament_css {
+  width: 230px;
+  margin-left: 10px;
+
+  p {
+    padding: 10px;
+    border: @inner_block_border;
+
+    &:hover {
+      box-shadow: @box_shadow_block;
+    }
+  }
+
+  small {
+    font-size: @fs_sing;
+    line-height: 2;
+  }
+
+  a {
+    padding-left: 15px;
+    display: inline-block;
+  }
+
+  i {
+    padding-left: 15px;
+    font-size: @fs_a_text;
   }
 }
 

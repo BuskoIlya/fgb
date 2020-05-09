@@ -1,19 +1,19 @@
 <html>
 <head>
     <?php
-    require 'blocks/set_lang.php';
-    require_once 'lang/lang_' . $_SESSION['lang'] . '.php';
+    require 'pages/blocks/set_lang.php';
+    require_once 'php/lang/lang_' . $_SESSION['lang'] . '.php';
     $website_title = $Lang['website_title'];
-    require 'blocks/head.php';
+    require 'pages/blocks/head.php';
     ?>
 </head>
 <body>
 <div id="fgb_body">
     <?php
-    require 'blocks/top.php';
-    require 'blocks/menu.php';
+    require 'pages/blocks/top.php';
+    require 'pages/blocks/menu.php';
     require 'pages/index/index_main.php';
-    require 'blocks/bottom.php';
+    require 'pages/blocks/bottom.php';
     ?>
 </div>
 </body>

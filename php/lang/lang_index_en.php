@@ -10,7 +10,10 @@ $Lang_index = array(
     '2019_10_25' => 'Autumn Leaf 2019, Minsk',
     '2019_11_23' => 'Belarus Championship 2019, Minsk',
     '2019_12_25' => '9th Christmas Tournament, Minsk',
-    '2020_01_24' => 'Open Tournament on the Boards 2020, Minsk'
+    '2020_01_24' => 'Open Tournament on the Boards 2020, Minsk',
+
+    'news_title' => 'News',
+    'tournaments_title' => 'Tournaments 2020'
 
 );
 ?>

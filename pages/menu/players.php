@@ -1,29 +1,25 @@
 <html>
 <head>
     <?php
-    require '../../blocks/set_lang.php';
-    require_once '../../lang/lang_' . $_SESSION['lang'] . '.php';
+    require '../blocks/set_lang.php';
+    require_once '../../php/lang/lang_' . $_SESSION['lang'] . '.php';
     $website_title = $Lang['page_players'];
-    require '../../blocks/head.php';
+    require '../blocks/head_pages.php';
     ?>
 </head>
 <body>
 <div id="fgb_body">
     <?php
-    require '../../blocks/top.php';
-    require '../../blocks/menu.php';
+    require '../blocks/top_pages.php';
+    require '../blocks/menu_pages.php';
     ?>
     <div class="inner_page">
         <div class="data_panel">
             <h1><?php echo $Lang['pp_title'] ?></h1>
 
             <div style="padding-left: 10px; margin-bottom: 25px">
-                <p>
-                    <i><?php echo $Lang['pp_egd_comment'] ?></i>
-                </p>
-                <p>
-                    <a href="http://www.europeangodatabase.eu/EGD/Find_Player.php">Europeangodatabase</a>
-                </p>
+                <p><i><?php echo $Lang['pp_egd_comment'] ?></i></p>
+                <p><a href="http://www.europeangodatabase.eu/EGD/Find_Player.php">Europeangodatabase</a></p>
             </div>
 
             <?php
@@ -66,7 +62,7 @@
     </div>
 
     <?php
-    require '../../blocks/bottom.php';
+    require '../blocks/bottom.php';
     ?>
 </div>
 </body>

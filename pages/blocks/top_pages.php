@@ -22,9 +22,9 @@
 
         <?php if (!isset($_COOKIE['login']) || $_COOKIE['login'] == ''): ?>
             <div class="register_block">
-                <a class="color_fill pink" href="/fgb/pages/login.php">
+                <a class="color_fill pink" href="../common/login.php">
                     <?php echo $Lang['log_in'] ?></a>
-                <a class="color_fill green" href="/fgb/pages/registration.php">
+                <a class="color_fill green" href="../common/registration.php">
                     <?php echo $Lang['do_register'] ?></a>
             </div>
         <?php else: ?>
@@ -56,13 +56,13 @@
 
     $('#exit_btn').click(function () {
         $.ajax({
-            url: '/fgb-04-21/php/exit.php',
+            url: '../../php/exit.php',
             type: 'POST',
             cache: false,
             data: {},
             dataType: 'html',
             success: function (data) {
-                document.location.href = "/fgb/index.php";
+                document.location.href = "../../index.php";
             }
         });
     });

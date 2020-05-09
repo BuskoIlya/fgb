@@ -1,6 +1,6 @@
 <?php
-require '../blocks/set_lang.php';
-require_once '../lang/lang_scripts_' . $_SESSION['lang'] . '.php';
+require '../pages/blocks/set_lang.php';
+require_once 'lang/lang_scripts_' . $_SESSION['lang'] . '.php';
 
 $email = trim(filter_var($_POST['email'], FILTER_SANITIZE_EMAIL));
 $user_password = trim(filter_var($_POST['user_password'], FILTER_SANITIZE_STRING));

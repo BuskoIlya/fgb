@@ -1,5 +1,7 @@
 var current_slider_photos = [];
 var current_slider_photo_titles = [];
+var tournaments_2020 = [];
+var news_2020 = [];
 
 function add_photos_to_index_slider(photos, titles) {
     let slider_container = $("#index_slider_container_id");

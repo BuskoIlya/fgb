@@ -24,7 +24,7 @@ $Lang = array(
 
     'page_players' => 'Score list of Belarus players',
     'pp_title' => 'Players',
-    'pp_egd_comment' => '*Players information correspond to data from the European player Go data base.',
+    'pp_egd_comment' => '*Players information corresponds to data from the European player Go data base.',
     'pp_name' => 'Full Name',
     'pp_city' => 'City',
     'pp_rank' => 'Rank',

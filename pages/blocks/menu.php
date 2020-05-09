@@ -3,7 +3,7 @@
 
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav">
-                <li class=""><a href="/fgb/index.php">
+                <li class=""><a href="index.php">
                         <?php echo $Lang['menu_main'] ?></a></li>
                 <li class="dropdown">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown">
@@ -19,7 +19,7 @@
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown">
                         <?php echo $Lang['menu_players'] ?><b class="caret"></b></a>
                     <ul class="dropdown-menu">
-                        <li><a href="/fgb/pages/menu/players.php">
+                        <li><a href="pages/menu/players.php">
                                 <?php echo $Lang['menu_players_egf'] ?></a></li>
                         <li><a href="?page=tournaments">
                                 <?php echo $Lang['menu_tournaments'] ?></a></li>

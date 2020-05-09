@@ -2,16 +2,16 @@
 <head>
     <?php
     require '../blocks/set_lang.php';
-    require_once '../lang/lang_' . $_SESSION['lang'] . '.php';
+    require_once '../../php/lang/lang_' . $_SESSION['lang'] . '.php';
     $website_title = $Lang['login_title'];
-    require '../blocks/head.php';
+    require '../blocks/head_pages.php';
     ?>
 </head>
 <body>
 <div id="fgb_body">
     <?php
-    require '../blocks/top.php';
-    require '../blocks/menu.php';
+    require '../blocks/top_pages.php';
+    require '../blocks/menu_pages.php';
     ?>
     <div class="inner_page">
         <div class="popup_window">
@@ -62,14 +62,14 @@
         var user_password = $('#user_password').val();
 
         $.ajax({
-            url: '../php/authorization.php',
+            url: '../../php/authorization.php',
             type: 'POST',
             cache: false,
             data: {'email': email, 'user_password': user_password},
             dataType: 'html',
             success: function (data) {
                 if (data == 'Successful') {
-                    document.location.href = "../index.php";
+                    document.location.href = "../../index.php";
                 } else {
                     document.location.href = "error-info.php";
                 }
@@ -77,6 +77,6 @@
         });
     });
     $('#cancel').click(function () {
-        document.location.href = "../index.php";
+        document.location.href = "../../index.php";
     });
 </script>

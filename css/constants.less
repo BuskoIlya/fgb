@@ -4,6 +4,7 @@
 
 @border_color: #cfd8dc;
 @border_block: 1px solid @border_color;
+@box_shadow_block: 0 0 10px rgba(0, 0, 0, 0.5);
 @btn_border_color: #045900;
 
 @fs_page_title: 18px;
@@ -16,6 +17,9 @@
 @panel_margin: 20px;
 @panel_title_color: #555;
 @panel_title_back_color: #f3f3f3;
+
+@inner_block_border_color: #e0eded;
+@inner_block_border: 1px solid @inner_block_border_color;
 
 // -----------------------------------------------------------
 // Цвета стран: Беларуси, России и международных соревнований.
@@ -48,4 +52,12 @@
 @world_color_back: rgba(6, 129, 128, 0.75);
 .world_color_back_css {
   background-color: @world_color_back;
+}
+
+.finished {
+  color: @blr_color_font;
+}
+
+.not_finished {
+  color: #77777761;
 }
