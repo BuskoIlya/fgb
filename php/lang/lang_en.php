@@ -30,6 +30,10 @@ $Lang = array(
     'pp_rank' => 'Rank',
     'pp_score' => 'Score',
 
+    'ranks_title' => 'Go Ranks System',
+    'ranks_score' => 'Score',
+    'ranks_level' => 'Kyu / Dan levels',
+
     'bottom_fn' => 'Ilya Busko',
     'bottom_comment' => 'The site is filled with educational information and created for  
         free use in order to increase the horizons and knowledge of everyone.',

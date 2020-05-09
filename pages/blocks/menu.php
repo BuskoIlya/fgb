@@ -10,7 +10,7 @@
                         <?php echo $Lang['menu_info'] ?><b class="caret"></b></a>
                     <ul class="dropdown-menu">
                         <li><a href="?page=contacts"><?php echo $Lang['menu_contacts'] ?></a></li>
-                        <li><a href="?page=ranks"><?php echo $Lang['menu_rank_system'] ?></a></li>
+                        <li><a href="pages/menu/ranks.php"><?php echo $Lang['menu_rank_system'] ?></a></li>
                         <li><a href="?page=info-board"><?php echo $Lang['menu_board_info'] ?></a></li>
                         <li><a href="?page=news"><?php echo $Lang['menu_news'] ?></a></li>
                     </ul>
