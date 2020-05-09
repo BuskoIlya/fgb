@@ -1,5 +1,7 @@
 <html>
 <head>
+    <link rel="stylesheet/less" href="css/index.less">
+
     <?php
     require 'pages/blocks/set_lang.php';
     require_once 'php/lang/lang_' . $_SESSION['lang'] . '.php';

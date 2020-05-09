@@ -38,6 +38,7 @@ $Lang = array(
     'do_register' => 'Зарегистрироваться',
     'do_exit' => 'Выйти',
 
+    'reg_login' => 'Имя пользователя',
     'reg_title' => 'Регистрация',
     'reg_email' => 'Почтовый адрес',
     'reg_password' => 'Пароль',

@@ -1,6 +1,7 @@
 <?php
 $Lang = array(
 
+    'wrong_login' => 'Login is wrong.',
     'wrong_email' => 'Email is wrong.',
     'wrong_password' => 'Password is wrong. Length should 6 and more letters.',
     'wrong_user' => 'User is absent.',

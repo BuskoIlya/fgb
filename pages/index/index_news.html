@@ -11,14 +11,13 @@
 </script>
 
 <script type='text/x-jquery-tmpl' id='news_template'>
-  <div class="main_news_info_css row">
-    <div class="col-md-12">
-      <div class="block">
-        <div class="news_data">
+  <div class="news_element row">
+      <div class="news_data">
+        <div style="padding: 15px">
           <div class="news_img">
             <a><img src=${img}></a>
           </div>
-          <div class="news_info">
+          <div style="display:table-cell;vertical-align:top;padding-left: 15px">
             <p><small class="news_date">
               <span class="glyphicon glyphicon-calendar" aria-hidden="true"></span>${date}
             </small></p>
@@ -27,54 +26,48 @@
           </div>
         </div>
         <div class="news_footer">
-          <div class="footer_ul">
-            <small class="footer_ul_li">
-              <span class="glyphicon glyphicon-user" aria-hidden="true">
-                ${author}
-              </span>
-            </small>
-          </div>
+          <small class="news_author">
+            <span class="glyphicon glyphicon-user" aria-hidden="true">
+              ${author}
+            </span>
+          </small>
         </div>
       </div>
-    </div>
   </div>
 </script>
 
 <script type='text/x-jquery-tmpl' id='match_template'>
-  <div class="countries_match_info_css row">
-    <div class="col-md-12">
-      <div class="countries_match_block">
-        <p class="countries_match_info">
-          <p><small class="countries_match_date">
+  <div class="match_element row">
+      <div class="match_data">
+        <p style="display:table-cell;margin: 0;padding-top: 10px">
+          <p><small class="match_date">
             <span class="glyphicon glyphicon-calendar" aria-hidden="true"></span>${date}
           </small></p>
-          <p><a href="" class="countries_match_title color_fill ${type}">${title}
+          <p><a href="" class="match_title color_fill ${type}">${title}
           </a></p>
         </p>
-        <div class="countries_match_data">
-          <div class="countries_match_img">
+        <div style="padding: 10px 45px;">
+          <div class="match_img">
             <p><img src=${flag1} alt=""></p>
             <p>${name1}</p>
             <p>${score1}</p>
           </div>
-          <div class="countries_match_img">
+          <div class="match_img">
             <p><img src=${flag2} alt=""></p>
             <p>${name2}</p>
             <p>${score2}</p>
           </div>
         </div>
-        <div class="countries_match_footer">
-          <div class="footer_ul">
-            <small class="footer_ul_li">
-              <span class="glyphicon glyphicon-user" aria-hidden="true">
-                ${author}
-              </span>
-            </small>
-          </div>
+        <div class="match_footer">
+          <small class="match_author">
+            <span class="glyphicon glyphicon-user" aria-hidden="true">
+              ${author}
+            </span>
+          </small>
         </div>
       </div>
-    </div>
   </div>
+
 </script>
 
 <div id="news_list">

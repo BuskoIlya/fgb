@@ -18,28 +18,30 @@
             <h1><?php echo $Lang['reg_title'] ?></h1>
 
             <form method="post">
-
+                <p><input class="input_text"
+                          type="text" id="user_login" value=""
+                          placeholder="<?php echo $Lang['reg_login'] ?>"></p>
                 <p><input class="input_text"
                           type="text" id="email" value=""
-                          placeholder=<?php echo $Lang['reg_email'] ?>></p>
+                          placeholder="<?php echo $Lang['reg_email'] ?>"></p>
                 <p><input class="input_text"
                           type="password" id="user_password" value=""
-                          placeholder=<?php echo $Lang['reg_password'] ?>></p>
+                          placeholder="<?php echo $Lang['reg_password'] ?>"></p>
                 <p><input class="input_text"
                           type="text" id="family" value=""
-                          placeholder=<?php echo $Lang['reg_family'] ?>></p>
+                          placeholder="<?php echo $Lang['reg_family'] ?>"></p>
                 <p><input class="input_text"
                           type="text" id="name" value=""
-                          placeholder=<?php echo $Lang['reg_name'] ?>></p>
+                          placeholder="<?php echo $Lang['reg_name'] ?>"></p>
                 <p><input class="input_text"
                           type="text" id="father" value=""
-                          placeholder=<?php echo $Lang['reg_father'] ?>></p>
+                          placeholder="<?php echo $Lang['reg_father'] ?>"></p>
                 <p><input class="input_text"
                           type="date" id="birth_date" value=""
-                          placeholder=<?php echo $Lang['reg_birth_date'] ?>></p>
+                          placeholder="<?php echo $Lang['reg_birth_date'] ?>"></p>
                 <p><input class="input_text"
                           type="text" id="city" value=""
-                          placeholder=<?php echo $Lang['reg_city'] ?>></p>
+                          placeholder="<?php echo $Lang['reg_city'] ?>"></p>
 
                 <p>
                     <div style="text-align: right">
@@ -61,6 +63,7 @@
 
 <script>
     $('#commit').click(function () {
+        var user_login = $('#user_login').val();
         var email = $('#email').val();
         var user_password = $('#user_password').val();
         var family = $('#family').val();
@@ -73,7 +76,8 @@
             url: '../../php/do_register.php',
             type: 'POST',
             cache: false,
-            data: {'email': email, 'user_password': user_password,
+            data: {'user_login': user_login, 'email': email,
+                'user_password': user_password,
             'family': family, 'name': name, 'father': father,
             'birth_date': birth_date, 'city': city},
             dataType: 'html',

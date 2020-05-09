@@ -1,103 +1,6 @@
 @import "constants.less";
 @import "common_elements";
 
-body {
-  background: #fefdf1;
-  margin: 0;
-
-  table {
-    overflow: hidden;
-  }
-}
-
-#fgb_body {
-  width: @window_width;
-  min-height: 100%;
-  margin: 0 auto;
-  background: white;
-  box-shadow: 0 1px 0 0 @border_color, 0 0 0 1px @border_color;
-}
-
-// -------------------------------------
-// Верхушка сайта
-// -------------------------------------
-.top_menu {
-  height: 28px;
-  position: relative;
-}
-
-.lang_block {
-  float: left;
-  margin-left: 15px;
-  margin-top: 4px;
-  height: 19px;
-  font-size: @fs_sing;
-}
-
-.lang {
-  float: left;
-  width: 33px;
-  height: 19px;
-  margin-right: 2px;
-  padding-top: 2px;
-  text-align: center;
-
-  &:hover {
-    color: #828282;
-    cursor: pointer;
-  }
-}
-
-.lang_selected {
-  .lang;
-  background: url("../img/icons/lang_bkgr.gif") no-repeat;
-}
-
-.register_block {
-  float: right;
-  margin-right: 15px;
-  margin-top: 4px;
-  height: 19px;
-  font-size: @fs_a_text;
-}
-
-.banner {
-  height: 93px;
-
-  .banner_left {
-    background: url("../img/by/banner_left.png") no-repeat;
-    width: 300px;
-    height: 93px;
-    float: left;
-  }
-
-  .banner_logo {
-    background: url("../img/by/banner_logo.png") no-repeat;
-    width: 400px;
-    height: 93px;
-    float: left;
-  }
-
-  .banner_right {
-    background: url("../img/by/banner_right.png") no-repeat;
-    width: 300px;
-    height: 93px;
-    float: left;
-  }
-}
-
-// -------------------------------------
-// Меню главной страницы
-// -------------------------------------
-.main_menu {
-  border: none;
-  border-radius: 0;
-  margin-bottom: 0;
-  border-top: @border_block;
-  border-bottom: @border_block;
-  font-size: @fs_menu_panel_title;
-}
-
 // -------------------------------------
 // Бегущая строка
 // -------------------------------------
@@ -173,30 +76,25 @@ body {
   }
 }
 
-.main_news_info_css {
+// Элемент "новость о турнире"
+.news_element {
   width: 650px;
-  margin: 0;
-  margin-bottom: 25px;
+  margin: 0 0 25px 10px !important;
   padding: 0;
 
-  .block {
+  .news_data {
     margin: 0 0 15px 0;
+    padding: 0;
     -webkit-transition: all .3s linear;
     transition: all .3s linear;
     position: relative;
     cursor: default;
     border-radius: 2px;
     border: @inner_block_border;
-    margin: 0;
-    padding: 0;
     font-size: 16px;
 
     &:hover {
       box-shadow: @box_shadow_block;
-    }
-
-    .news_data {
-      padding: 15px;
     }
 
     .news_img {
@@ -208,60 +106,44 @@ body {
       }
     }
 
-    .news_info {
-      display: table-cell;
-      vertical-align: top;
-      padding-left: 15px;
-
-      .news_title {
-        font-size: @fs_menu_panel_title;
-      }
-
-      .news_text {
-        font-size: @fs_text;
-      }
-
-      .news_date {
-        font-size: @fs_a_text;
-        margin-bottom: 5px;
-      }
+    .news_title {
+      font-size: @fs_menu_panel_title;
     }
 
-    .footer_ul {
+    .news_text {
+      font-size: @fs_text;
+    }
+
+    .news_date {
+      font-size: @fs_text;
+      margin-bottom: 5px;
+    }
+
+    .news_footer {
       text-align: right;
       width: 100%;
       margin: 0;
-      padding: 10px 5px;
+      padding: 12px 5px;
       display: block;
       background: #fcfcfc;
       border-top: @inner_block_border;
     }
 
-    .news_footer ul {
-      .footer_ul;
-      padding: 0;
-    }
-
-    .footer_ul_li {
+    .news_author {
       padding: 15px 10px;
       vertical-align: middle;
       border-left: @inner_block_border;
     }
-
-    .news_footer ul li {
-      .footer_ul_li;
-      display: table-cell;
-    }
   }
 }
 
-.countries_match_info_css {
+// Элемент "новость о матче"
+.match_element {
   width: 650px;
-  margin: 0;
-  margin-bottom: 25px;
+  margin: 0 0 25px 10px !important;
   padding: 0;
 
-  .countries_match_block {
+  .match_data {
     margin: 0 0 15px 0;
     -webkit-transition: all .3s linear;
     transition: all .3s linear;
@@ -278,11 +160,7 @@ body {
       box-shadow: @box_shadow_block;
     }
 
-    .countries_match_data {
-      padding: 10px 45px;
-    }
-
-    .countries_match_img {
+    .match_img {
       display: table-cell;
       width: 295px;
 
@@ -293,48 +171,33 @@ body {
       }
     }
 
-    .countries_match_info {
-      display: table-cell;
-      margin: 0;
-      padding-top: 10px;
-
-      .countries_match_title {
-        font-size: @fs_menu_panel_title;
-      }
-
-      .countries_match_date {
-        font-size: @fs_a_text;
-      }
+    .match_title {
+      font-size: @fs_menu_panel_title;
     }
 
-    .footer_ul {
+    .match_date {
+      font-size: @fs_text;
+    }
+
+    .match_footer {
       text-align: right;
       width: 100%;
       margin: 0;
-      padding: 10px 5px;
+      padding: 12px 5px;
       display: block;
       background: #fcfcfc;
       border-top: @inner_block_border;
     }
 
-    .countries_match_footer ul {
-      .footer_ul;
-      padding: 0;
-    }
-
-    .footer_ul_li {
+    .match_author {
       padding: 15px 10px;
       vertical-align: middle;
       border-left: @inner_block_border;
     }
-
-    .countries_match_footer ul li {
-      .footer_ul_li;
-      display: table-cell;
-    }
   }
 }
 
+// Элемент "турнир"
 .main_tournament_css {
   width: 230px;
   margin-left: 10px;
@@ -349,7 +212,7 @@ body {
   }
 
   small {
-    font-size: @fs_sing;
+    font-size: @fs_a_text;
     line-height: 2;
   }
 
@@ -361,18 +224,6 @@ body {
   i {
     padding-left: 15px;
     font-size: @fs_a_text;
-  }
-}
-
-// -------------------------------------
-// Нижняя часть главной страницы
-// -------------------------------------
-.footer {
-  padding: 20px;
-  border-top: @border_block;
-
-  p {
-    line-height: 1.5;
   }
 }
 

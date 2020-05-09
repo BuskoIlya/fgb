@@ -17,20 +17,20 @@
         <div class="popup_window">
             <h1><?php echo $Lang['login_title'] ?></h1>
 
-            <form method="" action="">
+            <form method="" action="" style="margin: 0">
 
                 <p><input class="input_text"
-                          type="text" id="email" value=""
-                          placeholder=<?php echo $Lang['reg_email'] ?>></p>
+                          type="text" id="login" value=""
+                          placeholder="<?php echo $Lang['reg_login'] ?>"></p>
                 <p><input class="input_text"
                           type="password" id="user_password" value=""
-                          placeholder=<?php echo $Lang['reg_password'] ?>></p>
-                <p class="remember_checkbox">
+                          placeholder="<?php echo $Lang['reg_password'] ?>"></p>
+                <!--p class="remember_checkbox">
                     <label>
                         <input type="checkbox" name="remember_me">
-                        <?php echo $Lang['login_remember_me'] ?>
+                        "<?php echo $Lang['login_remember_me'] ?>"
                     </label>
-                </p>
+                </p-->
 
                 <p>
                     <div style="text-align: right">
@@ -58,14 +58,14 @@
 
 <script>
     $('#commit').click(function () {
-        var email = $('#email').val();
+        var login = $('#login').val();
         var user_password = $('#user_password').val();
 
         $.ajax({
             url: '../../php/authorization.php',
             type: 'POST',
             cache: false,
-            data: {'email': email, 'user_password': user_password},
+            data: {'login': login, 'user_password': user_password},
             dataType: 'html',
             success: function (data) {
                 if (data == 'Successful') {

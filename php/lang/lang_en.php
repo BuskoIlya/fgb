@@ -38,6 +38,7 @@ $Lang = array(
     'do_register' => 'Register',
     'do_exit' => 'Exit',
 
+    'reg_login' => 'Login',
     'reg_title' => 'Registration',
     'reg_email' => 'E-mail',
     'reg_password' => 'Password',

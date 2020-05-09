@@ -1,0 +1,110 @@
+@import "constants.less";
+
+body {
+  background: #fefdf1;
+  margin: 0;
+
+  table {
+    overflow: hidden;
+  }
+}
+
+#fgb_body {
+  width: @window_width;
+  min-height: 100%;
+  margin: 0 auto;
+  background: white;
+  box-shadow: 0 1px 0 0 @border_color, 0 0 0 1px @border_color;
+}
+
+// -------------------------------------
+// Верхушка сайта
+// -------------------------------------
+.top_menu {
+  height: 28px;
+  position: relative;
+}
+
+.lang_block {
+  float: left;
+  margin-left: 15px;
+  margin-top: 4px;
+  height: 19px;
+  font-size: @fs_sing;
+}
+
+.lang {
+  float: left;
+  width: 33px;
+  height: 19px;
+  margin-right: 2px;
+  padding-top: 2px;
+  text-align: center;
+
+  &:hover {
+    color: #828282;
+    cursor: pointer;
+  }
+}
+
+.lang_selected {
+  .lang;
+  background: url("../img/icons/lang_bkgr.gif") no-repeat;
+}
+
+.register_block {
+  float: right;
+  margin-right: 15px;
+  margin-top: 4px;
+  height: 19px;
+  font-size: @fs_a_text;
+}
+
+.banner {
+  height: 93px;
+
+  .banner_left {
+    background: url("../img/by/banner_left.png") no-repeat;
+    width: 300px;
+    height: 93px;
+    float: left;
+  }
+
+  .banner_logo {
+    background: url("../img/by/banner_logo.png") no-repeat;
+    width: 400px;
+    height: 93px;
+    float: left;
+  }
+
+  .banner_right {
+    background: url("../img/by/banner_right.png") no-repeat;
+    width: 300px;
+    height: 93px;
+    float: left;
+  }
+}
+
+// -------------------------------------
+// Меню главной страницы
+// -------------------------------------
+.main_menu {
+  border: none;
+  border-radius: 0;
+  margin-bottom: 0;
+  border-top: @border_block;
+  border-bottom: @border_block;
+  font-size: @fs_menu_panel_title;
+}
+
+// -------------------------------------
+// Нижняя часть главной страницы
+// -------------------------------------
+.footer {
+  padding: 20px;
+  border-top: @border_block;
+
+  p {
+    line-height: 1.5;
+  }
+}
