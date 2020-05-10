@@ -34,6 +34,13 @@ $Lang = array(
     'ranks_score' => 'Score',
     'ranks_level' => 'Kyu / Dan levels',
 
+    'wagc_title' => 'World Amateur Go Championships',
+    'wagc_year' => 'Year',
+    'wagc_place' => 'Place',
+    'wagc_g' => 'Gold',
+    'wagc_s' => 'Silver',
+    'wagc_b' => 'Bronze',
+
     'bottom_fn' => 'Ilya Busko',
     'bottom_comment' => 'The site is filled with educational information and created for  
         free use in order to increase the horizons and knowledge of everyone.',

@@ -30,7 +30,7 @@
             $players = $query->fetchAll(PDO::FETCH_OBJ);
             ?>
 
-            <div class="table-responsive players_table">
+            <div class="table-responsive fgb_table">
                 <table class="table table-striped table-hover table-bordered">
                     <thead>
                     <tr class="active">

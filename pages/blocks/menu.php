@@ -36,7 +36,7 @@
                                 <?php echo $Lang['menu_command_ech_20192020'] ?></a></li>
                         <li><a href="?page=eus">
                                 <?php echo $Lang['menu_european_chs'] ?></a></li>
-                        <li><a href="?page=wagc">
+                        <li><a href="pages/menu/wagc.php">
                                 <?php echo $Lang['menu_world_chs'] ?></a></li>
                     </ul>
                 </li>
