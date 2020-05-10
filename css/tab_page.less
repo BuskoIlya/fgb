@@ -1,0 +1,98 @@
+@import "constants.less";
+@import "common_elements.less";
+
+/* Этот стилевой файл предназначен для оформления вертикального меню
+   страниц, на которых отображаются данные за несколько лет, например:
+   список турниров за все годы, архив новостей за все годы. */
+
+.tabs_panel {
+  position: relative;
+  max-width: @window_width - 2 * @panel_margin;
+  margin: 0 auto;
+}
+
+.tabs_panel_col {
+  box-sizing: border-box;
+  display: inline-block;
+  vertical-align: top;
+  margin: -20px;
+  padding: 20px;
+}
+
+.tabs_panel .tabs_menu div {
+  font-size: @fs_page_title;
+  padding: 15px 20px 15px 40px;
+  margin-bottom: 10px;
+  border-radius: 2px;
+  color: @blr_color_font;
+  background: @blr_color_back;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  position: relative;
+  vertical-align: middle;
+  -webkit-transition: 1s all cubic-bezier(0.075, 0.82, 0.165, 1);
+  transition: 1s all cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.tabs_panel .tabs_menu div:hover {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.tabs_panel .tabs_menu div span.light {
+  height: 15px;
+  width: 15px;
+  position: absolute;
+  top: 20px;
+  left: 15px;
+  background-color: @blr_color_font;
+  border-radius: 100%;
+  -webkit-transition: 1s all cubic-bezier(0.075, 0.82, 0.165, 1);
+  transition: 1s all cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.tabs_panel .tabs_menu div.active span.light {
+  background-color: @rus_color_back;
+  left: 0;
+  height: 100%;
+  width: 5px;
+  top: 0;
+  border-radius: 0;
+}
+
+.tabs_panel .tabs_menu div.active {
+  color: white;
+  padding: 15px 20px 15px 20px;
+}
+
+ul.tabs_data {
+  position: relative;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  padding-left: 10px;
+  -webkit-transition: 0.5s all cubic-bezier(0.075, 0.82, 0.165, 1);
+  transition: 0.5s all cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+ul.tabs_data li {
+  opacity: 0;
+  -webkit-transform: translateX(50px);
+  transform: translateX(50px);
+  position: absolute;
+  list-style: none;
+  -webkit-transition: 1s all cubic-bezier(0.075, 0.82, 0.165, 1);
+  transition: 1s all cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+ul.tabs_data li.active {
+  -webkit-transition-delay: .3s;
+  transition-delay: .3s;
+  z-index: 2;
+  opacity: 1;
+  -webkit-transform: translateX(0px);
+  transform: translateX(0px);
+}
+
+ul.tabs_data li p {
+  margin: 0;
+}

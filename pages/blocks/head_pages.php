@@ -26,4 +26,9 @@
 <script type="text/javascript" src="../../libs/less.min.js"></script>
 <script type="text/javascript" src="../../libs/bootstrap.min.js"></script>
 
+<!--// -------------------------------------
+// Мои скрипты
+// --------------------------------------->
+<script type="text/javascript" src="../../js/pages.js"></script>
+
 <link rel="shortcut icon" type="image/x-icon" href="../../img/icons/fgb.jpg"/>

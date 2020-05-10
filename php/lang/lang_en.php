@@ -41,6 +41,18 @@ $Lang = array(
     'wagc_s' => 'Silver',
     'wagc_b' => 'Bronze',
 
+    'eu_title' => 'European Championships',
+    'eu_personal' => 'Personals',
+    'eu_command' => 'Commands',
+    'eup_year' => 'Year',
+    'eup_place' => 'Place',
+    'eup_winner' => 'Winner',
+    'euc_year' => 'Year',
+    'euc_place' => 'Place',
+    'euc_g' => 'Gold',
+    'euc_s' => 'Silver',
+    'euc_b' => 'Bronze',
+
     'bottom_fn' => 'Ilya Busko',
     'bottom_comment' => 'The site is filled with educational information and created for  
         free use in order to increase the horizons and knowledge of everyone.',
