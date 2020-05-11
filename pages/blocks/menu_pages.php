@@ -47,8 +47,12 @@
                         <?php echo $Lang['menu_study'] ?><b class="caret"></b></a>
                     <ul class="dropdown-menu">
                         <li><a href="?page=schools"><?php echo $Lang['menu_schools'] ?></a></li>
-                        <li><a href="?page=go-stories"><?php echo $Lang['menu_stories'] ?></a></li>
-                        <li><a href="../study/go_manual.php"><?php echo $Lang['menu_manual'] ?></a></li>
+                        <li><a href="../stories/stories.php">
+                                <?php echo $Lang['menu_stories'] ?></a>
+                        </li>
+                        <li><a href="../gomanual/go_manual.php">
+                                <?php echo $Lang['menu_manual'] ?></a>
+                        </li>
                         <!--li><a href="?page=go-books">Литература</a></li-->
                     </ul>
                 </li>
