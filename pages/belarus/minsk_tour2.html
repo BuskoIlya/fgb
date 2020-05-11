@@ -1,0 +1,68 @@
+<script>
+    function view(id) {
+        $(id).slideToggle(1000);
+    }
+</script>
+
+<div class="rout_css">
+  <div class="rout_block">
+    <div class="rout_data">
+      <div class="rout_img">
+        <a><img src="../../img/by/minsk/mir.jpg"></a>
+      </div>
+      <div class="rout_info">
+        <p style="text-align: center" onclick="view('#detailed_mir_id')">
+          <a class="rout_title color_fill green">
+            Мирский замок
+          </a>
+        </p>
+        <p class="rout_text text-justify">
+          Дата основания 1520 год. Расположен в городе Мир
+          Гродненской области. Замок заложен магнатом Ю. И. Ильиничем
+          в готическом стиле.
+        </p>
+      </div>
+    </div>
+    <div class="rout_footer">
+      <p style="text-align: center" onclick="view('#detailed_mir_id')">
+        <small>
+          <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span>
+          Подробнее
+        </small>
+      </p>
+
+      <div id="detailed_mir_id" class="rout_info" style="display: none">
+        <div style="height: 300px; margin: 10px">
+          <div style="overflow:hidden;width: 500px;position: relative;margin:auto">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d605112.9682996524!2d26.567104624409012!3d53.6697469876157!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e0!4m5!1s0x46dbcfd35b1e6ad3%3A0xb61b853ddb570d9!2z0JzQuNC90YHQuiwg0JHQtdC70LDRgNGD0YHRjA!3m2!1d53.900601099999996!2d27.558971999999997!4m5!1s0x46d93a53ae4f83ab%3A0xc784b620c1145804!2z0JzQuNGALCDQkdC10LvQsNGA0YPRgdGM!3m2!1d53.4532454!2d26.4652001!5e0!3m2!1sru!2sru!4v1587416860484!5m2!1sru!2sru"
+                width="400" height="300" frameborder="0" style="border:0;" allowfullscreen=""
+                aria-hidden="false" tabindex="0"></iframe>
+            <div
+                style="position: absolute;width: 80%;bottom: 10px;left: 0;right: 0;margin-left: auto;margin-right: auto;color: #000;text-align: center;">
+              <small style="line-height: 1.8;font-size: 2px;background: #fff;">
+                Powered by
+                <a href="https://embedgooglemaps.com/fr/">embedgooglemaps FR</a>
+                &
+                <a href="https://newyorkhoponhopoffbus.nl">
+                  new york city freestyle pass: hop-on, hop-off tour en ferry
+                </a>
+              </small>
+            </div>
+            <style>#gmap_canvas img {
+              max-width: none !important;
+              background: none !important
+            }</style>
+          </div>
+          <br/>
+        </div>
+
+        <!--p class="rout_text text-justify">
+          Найти и записаться на экскурсию отправлением из Минска можно на
+          <a href="http://mail.ru">сайте</a>.
+        </p-->
+      </div>
+
+    </div>
+  </div>
+</div>

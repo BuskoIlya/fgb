@@ -1,0 +1,70 @@
+<script>
+    function view(id) {
+        $(id).slideToggle(1000);
+    }
+</script>
+
+<div class="rout_css">
+  <div class="rout_block">
+    <div class="rout_data">
+      <div class="rout_img">
+        <a><img src="../../img/by/minsk/belaz.jpg"></a>
+      </div>
+      <div class="rout_info">
+        <p style="text-align: center" onclick="view('#detailed_belaz_id')">
+          <a class="rout_title color_fill green">
+            Завод Белаз
+          </a>
+        </p>
+        <p class="rout_text text-justify">
+          Завод основан в 1948 году в городе Жодино.
+          На предприятии выпускаются карьерные самосвалы,
+          производственная техника для работы в карьерах,
+          машины для подземных работ, бульдозеры, погрузчики, аэродромные тягачи.
+          Занимает 27,3% рынка карьерных самосвалов грузоподъёмностью более 90 т (2017 год).
+        </p>
+      </div>
+    </div>
+    <div class="rout_footer">
+      <p style="text-align: center" onclick="view('#detailed_belaz_id')">
+        <small>
+          <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span>
+          Подробнее
+        </small>
+      </p>
+
+      <div id="detailed_belaz_id" class="rout_info" style="display: none">
+        <div style="height: 300px; margin: 10px">
+          <div style="overflow:hidden;width: 500px;position: relative;margin:auto">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d300179.9724006096!2d27.6649840337225!3d54.00000592236975!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e0!4m5!1s0x46dbcfd35b1e6ad3%3A0xb61b853ddb570d9!2z0JzQuNC90YHQuiwg0JHQtdC70LDRgNGD0YHRjA!3m2!1d53.900601099999996!2d27.558971999999997!4m5!1s0x46da504b73fe5827%3A0x1c1d010cc1d45cd4!2z0J7QkNCeICLQkdCV0JvQkNCXIiAtINGD0L_RgNCw0LLQu9GP0Y7RidCw0Y8g0LrQvtC80L_QsNC90LjRjyDRhdC-0LvQtNC40L3Qs9CwICLQkdCV0JvQkNCXLdCl0J7Qm9CU0JjQndCTIiwg0YPQu9C40YbQsCA0MCDQu9C10YIg0J7QutGC0Y_QsdGA0Y8sINCW0L7QtNC40L3Qviwg0JHQtdC70LDRgNGD0YHRjA!3m2!1d54.0975812!2d28.316868499999998!5e0!3m2!1sru!2sru!4v1587417301610!5m2!1sru!2sru"
+                width="400" height="300" frameborder="0" style="border:0;" allowfullscreen=""
+                aria-hidden="false" tabindex="0"></iframe>
+            <div
+                style="position: absolute;width: 80%;bottom: 10px;left: 0;right: 0;margin-left: auto;margin-right: auto;color: #000;text-align: center;">
+              <small style="line-height: 1.8;font-size: 2px;background: #fff;">
+                Powered by
+                <a href="https://embedgooglemaps.com/fr/">embedgooglemaps FR</a>
+                &
+                <a href="https://newyorkhoponhopoffbus.nl">
+                  new york city freestyle pass: hop-on, hop-off tour en ferry
+                </a>
+              </small>
+            </div>
+            <style>#gmap_canvas img {
+              max-width: none !important;
+              background: none !important
+            }</style>
+          </div>
+          <br/>
+        </div>
+
+        <!--p class="rout_text text-justify">
+          Найти и записаться на экскурсию отправлением из Минска можно на
+          <a href="http://mail.ru">сайте</a>.
+        </p-->
+      </div>
+
+    </div>
+  </div>
+</div>

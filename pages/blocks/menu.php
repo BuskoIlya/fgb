@@ -58,7 +58,7 @@
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown">
                         <?php echo $Lang['menu_belarus'] ?><b class="caret"></b></a>
                     <ul class="dropdown-menu">
-                        <li><a href="?page=by-minsk"><?php echo $Lang['menu_minsk'] ?></a></li>
+                        <li><a href="pages/belarus/minsk.php"><?php echo $Lang['menu_minsk'] ?></a></li>
                         <!--li><a href="?page=by-vitebsk">Витебск</a></li>
                         <li><a href="?page=by-brest">Брест</a></li>
                         <li><a href="?page=by-gomel">Гомель</a></li>

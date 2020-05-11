@@ -1,0 +1,70 @@
+<script>
+    function view(id) {
+        $(id).slideToggle(1000);
+    }
+</script>
+
+<div class="rout_css">
+  <div class="rout_block">
+    <div class="rout_data">
+      <div class="rout_img">
+        <a><img src="../../img/by/minsk/hatkur.jpg"></a>
+      </div>
+      <div class="rout_info">
+        <p style="text-align: center" onclick="view('#detailed_hatin_kurgan_id')">
+          <a class="rout_title color_fill green">
+            Хатынь - Курган Славы
+          </a>
+        </p>
+        <p class="rout_text text-justify">
+          Одни из самых посещаемых мест Беларуси – это главные достопримечательности,
+          хранящие память о подвиге народа, совершенном во время ВОВ – Хатынь и Курган Славы.
+          Экскурсия посвящена историческим
+          событиям Великой Отечественной войны, долгим годам оккупации и борьбе
+          белорусского народа против захватчиков.
+        </p>
+      </div>
+    </div>
+    <div class="rout_footer">
+      <p style="text-align: center" onclick="view('#detailed_hatin_kurgan_id')">
+        <small>
+          <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span>
+          Подробнее
+        </small>
+      </p>
+
+      <div id="detailed_hatin_kurgan_id" class="rout_info" style="display: none">
+        <div style="height: 300px; margin: 10px">
+          <div style="overflow:hidden;width: 500px;position: relative;margin:auto">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m34!1m12!1m3!1d299323.3768436645!2d27.48380391553698!3d54.11870607291011!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m19!3e0!4m5!1s0x46dbcfd35b1e6ad3%3A0xb61b853ddb570d9!2z0JzQuNC90YHQuiwg0JHQtdC70LDRgNGD0YHRjA!3m2!1d53.900601099999996!2d27.558971999999997!4m5!1s0x46dba793f64be029%3A0x877bc339de0bb4c2!2z0JzQtdC80L7RgNC40LDQu9GM0L3Ri9C5INC60L7QvNC_0LvQtdC60YEg0KXQsNGC0YvQvdGMLCDQkdC10LvQsNGA0YPRgdGM!3m2!1d54.334624999999996!2d27.9437137!4m5!1s0x46dbb508fbd921e9%3A0xccb366176446e381!2z0JrRg9GA0LPQsNC9INCh0LvQsNCy0YssINCR0LXQu9Cw0YDRg9GB0Yw!3m2!1d54.0188889!2d27.898333299999997!5e0!3m2!1sru!2sru!4v1587456764931!5m2!1sru!2sru"
+                width="400" height="300" frameborder="0" style="border:0;" allowfullscreen=""
+                aria-hidden="false" tabindex="0"></iframe>
+            <div
+                style="position: absolute;width: 80%;bottom: 10px;left: 0;right: 0;margin-left: auto;margin-right: auto;color: #000;text-align: center;">
+              <small style="line-height: 1.8;font-size: 2px;background: #fff;">
+                Powered by
+                <a href="https://embedgooglemaps.com/fr/">embedgooglemaps FR</a>
+                &
+                <a href="https://newyorkhoponhopoffbus.nl">
+                  new york city freestyle pass: hop-on, hop-off tour en ferry
+                </a>
+              </small>
+            </div>
+            <style>#gmap_canvas img {
+              max-width: none !important;
+              background: none !important
+            }</style>
+          </div>
+          <br/>
+        </div>
+
+        <!--p class="rout_text text-justify">
+          Найти и записаться на экскурсию отправлением из Минска можно на
+          <a href="http://mail.ru">сайте</a>.
+        </p-->
+      </div>
+
+    </div>
+  </div>
+</div>
