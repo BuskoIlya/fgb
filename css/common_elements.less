@@ -259,3 +259,47 @@
   padding: 0 5px;
   margin: 0 2px;
 }
+
+// ----------------------------------------------
+// Оформление карточки человека "ЖЗЛ"
+// ----------------------------------------------
+.person_card_css {
+
+  padding: 15px;
+  text-align: center;
+  height: 430px;
+  -webkit-transition: all .3s linear;
+  transition: all .3s linear;
+  position: relative;
+  cursor: default;
+  border-radius: 2px;
+  border: @inner_block_border;
+  margin: 0;
+  font-size: @fs_menu_panel_title;
+
+  &:hover {
+    box-shadow: @box_shadow_block;
+  }
+
+  p {
+    margin: 0;
+    padding: 0;
+    line-height: 2;
+  }
+
+  .photo {
+    width: 120px;
+    height: 150px;
+    padding-bottom: 15px;
+    border-radius: 2px;
+  }
+}
+
+.vk_icon_css {
+  margin-top: 10px;
+  border-radius: 2px;
+
+  &:hover {
+    box-shadow: @box_shadow_block;
+  }
+}

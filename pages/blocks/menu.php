@@ -23,7 +23,7 @@
                                 <?php echo $Lang['menu_players_egf'] ?></a></li>
                         <li><a href="?page=tournaments">
                                 <?php echo $Lang['menu_tournaments'] ?></a></li>
-                        <li><a href="?page=players-lib">
+                        <li><a href="pages/menu/persons.php">
                                 <?php echo $Lang['menu_players_library'] ?></a></li>
                     </ul>
                 </li>
