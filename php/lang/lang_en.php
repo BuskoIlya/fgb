@@ -53,6 +53,8 @@ $Lang = array(
     'euc_s' => 'Silver',
     'euc_b' => 'Bronze',
 
+    'eu_19_20_title' => 'European Command Go Championship 2019/2020',
+
     'bottom_fn' => 'Ilya Busko',
     'bottom_comment' => 'The site is filled with educational information and created for  
         free use in order to increase the horizons and knowledge of everyone.',

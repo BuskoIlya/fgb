@@ -34,7 +34,7 @@
                         <?php echo $Lang['menu_international_tournaments'] ?><b
                                 class="caret"></b></a>
                     <ul class="dropdown-menu">
-                        <li><a href="?page=eu-19/20">
+                        <li><a href="../world/eu_19_20.php">
                                 <?php echo $Lang['menu_command_ech_20192020'] ?></a></li>
                         <li><a href="../world/europe.php">
                                 <?php echo $Lang['menu_european_chs'] ?></a></li>
