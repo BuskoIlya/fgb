@@ -9,10 +9,10 @@
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown">
                         <?php echo $Lang['menu_info'] ?><b class="caret"></b></a>
                     <ul class="dropdown-menu">
-                        <li><a href="?page=contacts"><?php echo $Lang['menu_contacts'] ?></a></li>
-                        <li><a href="../../pages/menu/ranks.php">
+                        <li><a href="../menu/contacts.php"><?php echo $Lang['menu_contacts'] ?></a></li>
+                        <li><a href="../menu/ranks.php">
                                 <?php echo $Lang['menu_rank_system'] ?></a></li>
-                        <li><a href="../../pages/info_board/info_board.php">
+                        <li><a href="../info_board/info_board.php">
                                 <?php echo $Lang['menu_board_info'] ?></a></li>
                         <li><a href="?page=news"><?php echo $Lang['menu_news'] ?></a></li>
                     </ul>
