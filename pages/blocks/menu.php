@@ -46,7 +46,7 @@
                     <ul class="dropdown-menu">
                         <li><a href="?page=schools"><?php echo $Lang['menu_schools'] ?></a></li>
                         <li><a href="?page=go-stories"><?php echo $Lang['menu_stories'] ?></a></li>
-                        <li><a href="?page=go-manual"><?php echo $Lang['menu_manual'] ?></a></li>
+                        <li><a href="pages/study/go_manual.php"><?php echo $Lang['menu_manual'] ?></a></li>
                         <!--li><a href="?page=go-books">Литература</a></li-->
                     </ul>
                 </li>
