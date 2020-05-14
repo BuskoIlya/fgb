@@ -1,0 +1,101 @@
+<script>
+    $(document).ready(function () {
+        $("#google_address").load("malinovka_addr.html");
+        galleria_photos.splice(0);
+        galleria_photos.push(
+            {
+                photo: "../../img/schools/ma01.jpg",
+                description: "г. Минск, ул. Ежи Гедройца, д. 20 (Школа №9), кабинет В-110"
+            }
+        );
+        galleria_photos.push(
+            {
+                photo: "../../img/schools/ma02.jpg",
+                description: ""
+            }
+        );
+        galleria_photos.push(
+            {
+                photo: "../../img/schools/ma03.jpg",
+                description: ""
+            }
+        );
+        galleria_photos.push(
+            {
+                photo: "../../img/schools/ma04.jpg",
+                description: ""
+            }
+        );
+        $("#slider_id").load("../../libs/galleria_slider/galleria_slider.html");
+    });
+</script>
+
+<div class="inner_page">
+    <div class="data_panel">
+        <h1>Малиновка</h1>
+
+        <div class="container" style="width: 920px; margin: 0">
+            <div class="row">
+                <div class="col-xs-9 col-sm-9 col-md-9 col-lg-9 school_info_block">
+                    <div id="info">
+                        <p>
+                            <small class="author">
+                <span class="glyphicon glyphicon-user" aria-hidden="true">
+                  <strong><i style="font-size: large; line-height: 2">Руководитель:</i></strong>
+                  <a href="../menu/contacts.php" class="color_fill green" style="padding:5px">
+                    Зиновенков Евгений Викторович
+                  </a>
+                </span>
+                            </small>
+                            <br>
+                        <div class="address">
+                            <div style="float: left"><img class="city_icon"
+                                                          src="../../img/schools/ma01.jpg"/></div>
+                            <i class="address_text">г. Минск, ул. Ежи Гедройца, д. 20 (Школа №9), кабинет В-110</i>
+                            <div id="google_address"></div>
+                        </div>
+                        <br>
+                        <div style="text-align: justify;margin: 0 auto">
+                            <p>
+                                &emsp;&emsp;<i style="text-decoration: underline">Расписание занятий</i>:<br>
+                                &emsp;&emsp;Дети <br>
+                                &emsp;&emsp;&emsp;Сб 14:30 - ...<br>
+                                <br>
+                                &emsp;&emsp;<i style="text-decoration: underline">Тел.</i>:&emsp;+37529-707-79-85
+                                (Зиновенков Е. В.)
+                            </p>
+                        </div>
+                        </p>
+
+                        <!--div class="news_item_css" style="text-align:center; margin-top:20px">
+                          <p style="font-size: 16px;">Урок в школе</p>
+                          <p>
+                            <video width="640" height="360" controls>
+                              <source src="images/schools/sd_video1.mp4" type="video/mp4">
+                            </video>
+                          </p>
+                        </div-->
+
+                        <div id="slider_id"></div>
+
+                    </div>
+                </div>
+                <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 school_flag_block">
+                    <div class="school_flag">
+                        <a><img src="../../img/schools/ma01.jpg"></a>
+                    </div>
+                    <p class="title">Минск, Малиновка</p>
+                    <p style="font-size: 17px">
+                        <span class="glyphicon glyphicon-user" aria-hidden="true"></span>
+                    </p>
+                    <p>
+                    <ol style="text-align: left">
+
+                    </ol>
+                    </p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>

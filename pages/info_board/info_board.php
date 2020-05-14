@@ -14,7 +14,7 @@
     require '../blocks/menu_pages.php';
     ?>
 
-    <div id="info_board_id"/>
+    <div id="info_board_id"></div>
 
     <?php
     require '../blocks/bottom.php';

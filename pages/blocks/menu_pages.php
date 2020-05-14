@@ -46,7 +46,9 @@
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown">
                         <?php echo $Lang['menu_study'] ?><b class="caret"></b></a>
                     <ul class="dropdown-menu">
-                        <li><a href="?page=schools"><?php echo $Lang['menu_schools'] ?></a></li>
+                        <li><a href="../schools/schools.php">
+                                <?php echo $Lang['menu_schools'] ?></a>
+                        </li>
                         <li><a href="../stories/stories.php">
                                 <?php echo $Lang['menu_stories'] ?></a>
                         </li>

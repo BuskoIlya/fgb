@@ -1,0 +1,127 @@
+<script>
+    $(document).ready(function () {
+        $("#google_address").load("vitebsk_addr.html");
+        galleria_photos.splice(0);
+        galleria_photos.push(
+            {
+                photo: "../../img/schools/vit01.jpg",
+                description: "ул. Гагарина 24, школа танцев \"Аквамарин\""
+            }
+        );
+        galleria_photos.push(
+            {
+                photo: "../../img/schools/vit02.jpg",
+                description: ""
+            }
+        );
+        galleria_photos.push(
+            {
+                photo: "../../img/schools/vit03.jpg",
+                description: ""
+            }
+        );
+        galleria_photos.push(
+            {
+                photo: "../../img/schools/vit04.jpg",
+                description: ""
+            }
+        );
+        galleria_photos.push(
+            {
+                photo: "../../img/schools/vit05.jpg",
+                description: ""
+            }
+        );
+        galleria_photos.push(
+            {
+                photo: "../../img/schools/vit06.jpg",
+                description: ""
+            }
+        );
+        galleria_photos.push(
+            {
+                photo: "../../img/schools/vit07.jpg",
+                description: ""
+            }
+        );
+        $("#slider_id").load("../../libs/galleria_slider/galleria_slider.html");
+    });
+</script>
+
+<div class="inner_page">
+    <div class="data_panel">
+        <h1>Го в Витебск</h1>
+
+        <div class="container" style="width: 920px; margin: 0">
+            <div class="row">
+                <div class="col-xs-9 col-sm-9 col-md-9 col-lg-9 school_info_block">
+                    <div id="info">
+                        <p>
+                            <small class="author">
+                <span class="glyphicon glyphicon-user" aria-hidden="true">
+                  <strong><i style="font-size: large; line-height: 2">Руководитель:</i></strong>
+                  <a href="../menu/contacts.php" class="color_fill green" style="padding:5px">
+                    Бусько Илья Владимирович
+                  </a>
+                </span>
+                            </small>
+                            <br>
+                            <small class="author">
+                <span class="glyphicon glyphicon-user" aria-hidden="true">
+                  <strong><i style="font-size: large; line-height: 2">Преподаватели:</i></strong>
+                        <p style="padding-left:5px">Бусько Владимир Александрович, Бусько Ольга Анатольевна
+                        </p>
+                        </span>
+                        </small>
+                        <br>
+                        <div class="address">
+                            <div style="float: left"><img class="city_icon"
+                                src="../../img/schools/city_vitebsk.jpg"/></div>
+                            <i class="address_text">Витебск, ул. Гагарина 24, школа танцев "Аквамарин"</i>
+                            <div id="google_address"></div>
+                        </div>
+                        <br>
+                        <div style="text-align: justify;margin: 0 auto">
+                            <p>
+                                &emsp;&emsp;<i style="text-decoration: underline">Расписание занятий</i>:<br>
+                                &emsp;&emsp;Начинающие <br>
+                                &emsp;&emsp;&emsp;Сб 16:30-18:00<br>
+                                <br>
+                                &emsp;&emsp;<i style="text-decoration: underline">Тел.</i>:&emsp;+37529-599-44-87
+                                (Бусько О. А.)
+                            </p>
+                        </div>
+                        </p>
+
+                        <!--div class="news_item_css" style="text-align:center; margin-top:20px">
+                          <p style="font-size: 16px;">Урок в школе</p>
+                          <p>
+                            <video width="640" height="360" controls>
+                              <source src="images/schools/sd_video1.mp4" type="video/mp4">
+                            </video>
+                          </p>
+                        </div-->
+
+                        <div id="slider_id" style="padding: 10px"></div>
+
+                    </div>
+                </div>
+                <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 school_flag_block">
+                    <div class="school_flag">
+                        <a><img src="../../img/schools/city_vitebsk.jpg"></a>
+                    </div>
+                    <p class="title">Го в Витебске</p>
+                    <p style="font-size: 17px">
+                        <span class="glyphicon glyphicon-user" aria-hidden="true"></span>
+                    </p>
+                    <p>
+                    <ol style="text-align: left">
+
+                    </ol>
+                    </p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
