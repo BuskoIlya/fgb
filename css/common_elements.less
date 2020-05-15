@@ -374,3 +374,124 @@
     border-radius: 2px;
   }
 }
+
+// Элемент "новость о турнире"
+.news_element {
+  width: 650px;
+  margin: 0 0 25px 10px !important;
+  padding: 0;
+
+  .news_data {
+    margin: 0 0 15px 0;
+    padding: 0;
+    -webkit-transition: all .3s linear;
+    transition: all .3s linear;
+    position: relative;
+    cursor: default;
+    border-radius: 2px;
+    border: @inner_block_border;
+    font-size: 16px;
+
+    &:hover {
+      box-shadow: @box_shadow_block;
+    }
+
+    .news_img {
+      display: table-cell;
+      width: 250px;
+
+      img {
+        width: 100%;
+      }
+    }
+
+    .news_title {
+      font-size: @fs_menu_panel_title;
+    }
+
+    .news_text {
+      font-size: @fs_text;
+    }
+
+    .news_date {
+      font-size: @fs_text;
+      margin-bottom: 5px;
+    }
+
+    .news_footer {
+      text-align: right;
+      width: 100%;
+      margin: 0;
+      padding: 12px 5px;
+      display: block;
+      background: #fcfcfc;
+      border-top: @inner_block_border;
+    }
+
+    .news_author {
+      padding: 15px 10px;
+      vertical-align: middle;
+      border-left: @inner_block_border;
+    }
+  }
+}
+
+// Элемент "новость о матче"
+.match_element {
+  width: 650px;
+  margin: 0 0 25px 10px !important;
+  padding: 0;
+
+  .match_data {
+    margin: 0 0 15px 0;
+    -webkit-transition: all .3s linear;
+    transition: all .3s linear;
+    position: relative;
+    cursor: default;
+    border-radius: 2px;
+    border: @inner_block_border;
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    text-align: center;
+
+    &:hover {
+      box-shadow: @box_shadow_block;
+    }
+
+    .match_img {
+      display: table-cell;
+      width: 295px;
+
+      img {
+        width: 160px;
+        height: 85px;
+        margin: 0px 30px;
+      }
+    }
+
+    .match_title {
+      font-size: @fs_menu_panel_title;
+    }
+
+    .match_date {
+      font-size: @fs_text;
+    }
+
+    .match_footer {
+      text-align: right;
+      width: 100%;
+      margin: 0;
+      padding: 12px 5px;
+      display: block;
+      background: #fcfcfc;
+      border-top: @inner_block_border;
+    }
+
+    .match_author {
+      padding: 15px 10px;
+      vertical-align: middle;
+      border-left: @inner_block_border;
+    }
+  }
+}

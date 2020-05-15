@@ -23,7 +23,7 @@
                     <ul class="dropdown-menu">
                         <li><a href="../menu/players.php">
                                 <?php echo $Lang['menu_players_egf'] ?></a></li>
-                        <li><a href="?page=tournaments">
+                        <li><a href="../tournaments/tournaments.php">
                                 <?php echo $Lang['menu_tournaments'] ?></a></li>
                         <li><a href="../menu/persons.php">
                                 <?php echo $Lang['menu_players_library'] ?></a></li>

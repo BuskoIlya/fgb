@@ -74,10 +74,11 @@ require_once 'php/lang/lang_index_' . $_SESSION['lang'] . '.php';
 
     function get_tournaments(year) {
         $.ajax({
-            url: 'php/read_tournaments.php',
+            url: 'php/read_news.php',
             type: 'POST',
             cache: false,
-            data: {'year': year},
+            data: {'year': '2020', 'type': 'tournament',
+                'is_finished': 'ALL'},
             dataType: 'json',
             success: function (data) {
                 tournaments_2020.splice(0);
@@ -92,7 +93,8 @@ require_once 'php/lang/lang_index_' . $_SESSION['lang'] . '.php';
             url: 'php/read_news.php',
             type: 'POST',
             cache: false,
-            data: {'year': year},
+            data: {'year': '2020', 'type': 'ALL',
+                'is_finished': 'finished'},
             dataType: 'json',
             success: function (data) {
                 news_2020.splice(0);

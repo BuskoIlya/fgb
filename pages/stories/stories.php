@@ -70,7 +70,7 @@
         <small style="margin:0">
           <span class="glyphicon glyphicon-user" aria-hidden="true"
             style="vertical-align: super"></span>
-          <a href="?page=${author_ref}" class="color_fill green" style="padding: 0 5px">
+          <a href="../menu/persons.php" class="color_fill green" style="padding: 0 5px">
               ${author}
           </a>
         </small>

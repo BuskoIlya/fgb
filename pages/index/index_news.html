@@ -1,7 +1,7 @@
 <script>
     $(document).ready(function () {
-        for (let i = 0; i < news_2020.length; i++) {
-            if (news_2020[i].img != '') {
+        for (let i = news_2020.length - 1; i >= 0 ; i--) {
+            if (news_2020[i].type == 'tournament') {
                 $('#news_template').tmpl(news_2020[i]).appendTo('#news_list');
             } else {
                 $('#match_template').tmpl(news_2020[i]).appendTo('#news_list');
@@ -21,7 +21,7 @@
             <p><small class="news_date">
               <span class="glyphicon glyphicon-calendar" aria-hidden="true"></span>${date}
             </small></p>
-            <p><a href="" class="news_title color_fill ${type}">${title}</a></p>
+            <p><a href="" class="news_title color_fill ${decoration}">${title}</a></p>
             <p class="news_text text-justify">${description}</p>
           </div>
         </div>
@@ -43,7 +43,7 @@
           <p><small class="match_date">
             <span class="glyphicon glyphicon-calendar" aria-hidden="true"></span>${date}
           </small></p>
-          <p><a href="" class="match_title color_fill ${type}">${title}
+          <p><a href="" class="match_title color_fill ${decoration}">${title}
           </a></p>
         </p>
         <div style="padding: 10px 45px;">
