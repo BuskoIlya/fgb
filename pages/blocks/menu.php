@@ -12,7 +12,7 @@
                         <li><a href="pages/menu/contacts.php"><?php echo $Lang['menu_contacts'] ?></a></li>
                         <li><a href="pages/menu/ranks.php"><?php echo $Lang['menu_rank_system'] ?></a></li>
                         <li><a href="pages/info_board/info_board.php"><?php echo $Lang['menu_board_info'] ?></a></li>
-                        <li><a href="?page=news"><?php echo $Lang['menu_news'] ?></a></li>
+                        <li><a href="pages/news/news.php"><?php echo $Lang['menu_news'] ?></a></li>
                     </ul>
                 </li>
                 <li class="dropdown">
