@@ -70,7 +70,9 @@
                         $('#news_template').tmpl(news_2020[i]).appendTo('#2020_id');
                     }
                 }
-                show_tabs_data();
+                setTimeout(function () {
+                    show_tabs_data();
+                }, 200);
             }
         });
         $.ajax({
@@ -119,7 +121,7 @@
 <script type='text/x-jquery-tmpl' id='news_template'>
   <div class="chain_block">
     <div class="chain_icon chain_icon_news">
-      <img src="${author_img}" alt="Picture">
+      <img src="../../${author_img}" alt="Picture">
     </div>
     <div class="chain_data chain_data_news">
 <div class="news_element row">
@@ -147,13 +149,14 @@
   </div>
     </div>
   </div>
+
 </script>
 
 <script type='text/x-jquery-tmpl' id='match_template'>
 
   <div class="chain_block">
     <div class="chain_icon chain_icon_news">
-      <img src="${author_img}" alt="Picture">
+      <img src="../../${author_img}" alt="Picture">
     </div>
     <div class="chain_data chain_data_match">
 
@@ -190,4 +193,5 @@
 
     </div>
   </div>
+
 </script>

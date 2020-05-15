@@ -64,7 +64,9 @@
                 for (let i = 0; i < news_2020.length; i++) {
                     $('#tournament_template').tmpl(news_2020[i]).appendTo('#2020_id');
                 }
-                show_tabs_data();
+                setTimeout(function () {
+                    show_tabs_data();
+                }, 200);
             }
         });
         $.ajax({
@@ -101,7 +103,7 @@
 <script type='text/x-jquery-tmpl' id='tournament_template'>
     <div class="chain_block">
       <div class="chain_icon chain_icon_tournament">
-        <img src="${place_img}">
+        <img src="../../${place_img}">
       </div>
       <div class="chain_data chain_data_tournament">
         <small style="vertical-align:top">
