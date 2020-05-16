@@ -114,7 +114,8 @@
             aria-hidden="true">${pc}</span>
         </small>
         <div style="text-align:center; margin: 5px 0">
-          <a href="${ref}" class="color_fill ${decoration}" style="vertical-align:bottom">${title}</a>
+          <a href="../../${ref}" class="color_fill ${decoration}"
+            style="vertical-align:bottom">${title}</a>
         </div>
         <div>
         <i style="font-size: 13px">${address}</i>

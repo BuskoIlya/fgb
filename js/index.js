@@ -10,7 +10,9 @@ function add_photos_to_index_slider(photos, titles) {
         let a_download = $('<a/>');
         a_download.attr('href', photos[i]);
         a_download.attr('download', '');
-        a_download.attr('title', titles[i]);
+        if (titles.length == photos.length) {
+            a_download.attr('title', titles[i]);
+        }
         let img1 = $('<img/>');
         img1.addClass('img-thumbnail');
         img1.attr('data-u', 'image');
@@ -24,3 +26,57 @@ function add_photos_to_index_slider(photos, titles) {
         div.appendTo(slider_container);
     }
 }
+
+function decorate_tournament(table, arr) {
+    $(table).find('tr').each(function (i, el) {
+        let $tds = $(this).find('td');
+        for (let i = 0; i < arr.length; i++) {
+            let val = $tds.eq(arr[i]).text();
+            if (val.includes('+')) {
+                $tds.eq(arr[i]).addClass('bg-success');
+            } else if (val.includes('-')) {
+                $tds.eq(arr[i]).addClass('bg-danger');
+            }
+        }
+    });
+}
+
+function decorate_rus_tournament(table, arr, score) {
+    $(table).find('tr').each(function (i, el) {
+        let $tds = $(this).find('td');
+        for (let i = 0; i < arr.length; i++) {
+            let val = $tds.eq(arr[i]).text();
+            if (val.includes('+')) {
+                $tds.eq(arr[i]).addClass('text-success');
+            } else if (val.includes('-')) {
+                $tds.eq(arr[i]).addClass('text-danger');
+            }
+        }
+        let val = $tds.eq(score).text();
+        if (val.includes('+')) {
+            $tds.eq(score).addClass('bg-success');
+        } else if (val.includes('-')) {
+            $tds.eq(score).addClass('bg-danger');
+        }
+    });
+}
+
+function select_blue_color_our_players(table, arr, number) {
+    $(table).find('tr').each(function (i, el) {
+        let $tds = $(this).find('td');
+        let val = $tds.eq(number).text();
+        let img_title = $(this).find('img').attr('title');
+        if (val.includes('Беларусь') ||
+            val.includes('Минск') || val.includes('Витебск')) {
+            for (let i = 0; i < arr.length; i++) {
+                $tds.eq(arr[i]).addClass('select_our_player');
+            }
+        }
+        if (img_title != undefined && img_title.includes('Беларусь')) {
+            for (let i = 0; i < arr.length; i++) {
+                $tds.eq(arr[i]).addClass('select_our_player');
+            }
+        }
+    });
+}
+

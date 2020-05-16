@@ -28,6 +28,8 @@ require_once 'php/lang/lang_index_' . $_SESSION['lang'] . '.php';
 </div>
 
 <script type="text/javascript" src="js/index.js"></script>
+<script type="text/javascript" src="libs/jssor.slider.min.js"></script>
+<script type="text/javascript" src="js/sliders/index_slider.js"></script>
 
 <script>
     $(document).ready(function () {
