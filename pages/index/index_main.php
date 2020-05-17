@@ -37,7 +37,7 @@ require_once 'php/lang/lang_index_' . $_SESSION['lang'] . '.php';
         current_slider_photos.splice(0);
         current_slider_photo_titles = get_photo_titles();
         current_slider_photos = get_photos();
-        $("#index_slider").load("pages/index/index_slider.html");
+        $("#index_slider").load("pages/blocks/t_index_slider.html");
 
         get_tournaments('2020');
         get_news('2020');

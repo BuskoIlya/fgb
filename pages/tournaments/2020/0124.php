@@ -15,8 +15,8 @@
 <body>
 <div id="fgb_body">
     <?php
-    require '../../blocks/top_pages.php';
-    require '../../blocks/menu_pages.php';
+    require '../../blocks/top_news.php';
+    require '../../blocks/menu_news.php';
     require '0124.html';
     require '../../blocks/bottom.php';
     ?>
