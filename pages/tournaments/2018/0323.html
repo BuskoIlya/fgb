@@ -1,14 +1,15 @@
 <script>
     $(document).ready(function () {
         var data = {
-            'date': '24.01.2020',
+            'date': '23.03.2018',
             'address': 'г. Минск, МДДМ, Старовиленский тракт 41.',
             'place_img': '../../../img/icons/city_minsk.jpg',
             'www_ref': '',
             'city': '(Минск, Беларусь)',
             'author': 'Грунковский Юрий',
-            'photos': ["../../../img/by/news/2020/0124.jpg", "../../../img/by/news/2020/0124-2.jpg",
-                "../../../img/by/news/2020/0124-3.jpg"],
+            'photos': ["../../../img/by/news/2018/0323-2.jpg", "../../../img/by/news/2018/0323.jpg",
+                "../../../img/by/news/2018/0323-3.jpg", "../../../img/by/news/2018/0323-4.jpg",
+                "../../../img/by/news/2018/0323-5.jpg"],
         };
 
         $.get('../../blocks/t_news_top.html', function (template) {
@@ -20,16 +21,16 @@
         current_slider_photo_titles.splice(0);
         $("#slider_id").load("../../blocks/t_index_slider.html");
 
-        for (let i = 0; i < r0124.length; i++) {
-            $('#t_20200124').tmpl(r0124[i]).appendTo('#results_table_id');
+        for (let i = 0; i < r0323.length; i++) {
+            $('#t_20180323').tmpl(r0323[i]).appendTo('#results_table_id');
         }
-        decorate_tournament('#results_table_id', [4, 5, 6]);
+        decorate_tournament('#results_table_id', [4, 5, 6, 7]);
     });
 </script>
 
 <div class="inner_page">
     <div class="data_panel">
-        <h1>Открытый турнир на досках 13х13</h1>
+        <h1>Кубок Минска</h1>
         <div id="news_top_id"></div>
         <div id="slider_id" style="padding-bottom: 20px"></div>
         <div id="results_id" style="margin-bottom: 20px">
@@ -40,14 +41,16 @@
                         <th>Место</th>
                         <th>Игрок</th>
                         <th>Город</th>
-                        <th>Ранг</th>
+                        <th>Рейтинг</th>
                         <th>1</th>
                         <th>2</th>
                         <th>3</th>
+                        <th>4</th>
                         <th>Очки</th>
                         <th>MMS</th>
                         <th>SOS</th>
                         <th>SDOS</th>
+                        <th>SOSOS</th>
                     </tr>
                     </thead>
                     <tbody id="results_table_id">
@@ -58,18 +61,20 @@
     </div>
 </div>
 
-<script type='text/x-jquery-tmpl' id='t_20200124'>
+<script type='text/x-jquery-tmpl' id='t_20180323'>
   <tr>
     <td>${place}</td>
     <td>${player}</td>
     <td>${city}</td>
-    <td>${rank}</td>
+    <td>${score}</td>
     <td>${game1}</td>
     <td>${game2}</td>
     <td>${game3}</td>
+    <td>${game4}</td>
     <td>${total}</td>
     <td>${mms}</td>
     <td>${sos}</td>
     <td>${sdos}</td>
+    <td>${sosos}</td>
   </tr>
 </script>

@@ -1,0 +1,116 @@
+<script>
+    $(document).ready(function () {
+        var data = {
+            'date': '04.04.2020',
+            'address': 'г. Минск, Китайский культурный центр, Клары Цеткин 51а',
+            'place_img': '../../../img/icons/city_minsk.jpg',
+            'www_ref': '',
+            'city': '(Минск, Беларусь)',
+            'author': 'Грунковский Юрий',
+            'photos': ["../../../img/by/news/2020/0124.jpg", "../../../img/by/news/2020/0124-2.jpg",
+                "../../../img/by/news/2020/0124-3.jpg"],
+        };
+
+        $.get('../../blocks/t_news_top.html', function (template) {
+            $(template).tmpl(data).appendTo('#news_top_id');
+        });
+        //current_slider_photos.splice(0);
+        //current_slider_photos.push(news_2019[7].photos);
+        //html_in_div("html/template_slider.html", "#slider_id");
+        //html_in_div('html/news_archive/2019/results_2019_12_20.html', '#results_id');
+    });
+</script>
+
+<div class="inner_page">
+  <div class="data_panel">
+    <h1>Кубок Вейчи</h1>
+    <div id="news_top_id"></div>
+    <div id="slider_id" style="padding-bottom: 20px"></div>
+    <div id="results_id" style="margin-bottom: 20px"></div>
+
+    <div style="width: 685px;text-align: justify;margin: 0 auto">
+
+      <p>
+&emsp;&emsp;<strong>I Цели и задачи</strong><br>
+&emsp;&emsp;&minus; популяризация игры Го;<br>
+&emsp;&emsp;&minus; повышение квалификации и совершенствование спортивного мастерства;<br>
+&emsp;&emsp;&minus; проведение фестиваля как праздничного мероприятия китайского нового года.
+      </p>
+
+      <p>
+&emsp;&emsp;<strong>II Участники</strong><br>
+&emsp;&emsp;&minus; К участию в турнире допускаются игроки, твердо усвоившие правила игры.
+      </p>
+
+      <p>
+&emsp;&emsp;<strong>III Сроки и место проведения</strong><br>
+&emsp;&emsp;&minus; Турнир на Кубок по Вейчи проводится с 4 по 5 апреля 2020 года в
+        Китайском центре культуры (ул. Клары Цеткин, 51а, второй этаж).
+        Начало турнира 4 апреля в 13.00. Регистрация проводится до 12 марта.
+      </p>
+
+      <p>
+&emsp;&emsp;<strong>IV Регламент</strong><br>
+
+&emsp;&emsp;<i style="text-decoration: underline">4.1 Основное</i><br>
+
+&emsp;&emsp;&emsp;&minus; Турнир подразделяется на лиги:
+        30кю-20кю; 19кю-10кю; 9кю-Дан уровни.
+        Турнир проводится по швейцарской системе, 5 туров в каждой лиге.<br>
+&emsp;&emsp;&emsp;&minus; Контроль времени 30 мин, плюс дополнительное
+        время байоми 30 сек/ход 2 периода.<br>
+&emsp;&emsp;&emsp;&minus; Подсчет очков – по китайским правилам.<br>
+
+&emsp;&emsp;<i style="text-decoration: underline">4.2 1-ый день (4 апреля, суббота)</i><br>
+&emsp;&emsp;&emsp;&minus; Подготовка наборов, часов, сбор и регистрация участников: 12.30 – 13.00<br>
+&emsp;&emsp;&emsp;&minus; Открытие турнира: 13.00 – 13.20,
+включая выступление музыкальной группы Stone Dragon.<br>
+&emsp;&emsp;&emsp;&minus; Напоминание подсчета очков по китайским правилам,
+        напоминание правил поведения, контроля времени и жеребьевка: 13.20 – 13.30<br>
+&emsp;&emsp;&emsp;&minus; I тур: 13.30 – 15.00<br>
+&emsp;&emsp;&emsp;&minus; Обеденное время: 15.00 – 16.00<br>
+&emsp;&emsp;&emsp;&minus; II тур: 16.00 – 18.00<br>
+
+&emsp;&emsp;<i style="text-decoration: underline">4.3 2-ой день (5 апреля, воскресение)</i><br>
+&emsp;&emsp;&emsp;&minus; Настройка часов и подготовка жеребьевки ко второму дню: 11.00 – 11.15<br>
+&emsp;&emsp;&emsp;&minus; III тур: 11.15 – 12.45<br>
+&emsp;&emsp;&emsp;&minus; IV тур: 13.15 – 14.45<br>
+&emsp;&emsp;&emsp;&minus; Мастер-класс по китайской живописи: 14.30 – 15.00<br>
+&emsp;&emsp;&emsp;&minus; Обеденное время: 15.00 – 16.00<br>
+&emsp;&emsp;&emsp;&minus; V тур: 16.00 – 17.30<br>
+&emsp;&emsp;&emsp;&minus; Награждение участников и закрытие фестиваля: 17.30 – 18.00<br>
+
+      </p>
+
+      <p>
+&emsp;&emsp;<strong>V Определение победителей</strong><br>
+&emsp;&emsp;&minus; Победители определяются по наибольшей сумме набранных очков.
+        В случае их равенства учитываются дополнительные показатели:
+        1) коэффициент Бухгольца; 2) коэффициент Зоннеборна-Бергера.
+      </p>
+
+      <p>
+&emsp;&emsp;<strong>VI Награждение победителей</strong><br>
+&emsp;&emsp;&minus; Победитель каждой лиги награждается кубком.<br>
+&emsp;&emsp;&minus; Участники каждой лиги, занявшие 2-ые и 3-ие места
+        награждаются небольшими призами.<br>
+&emsp;&emsp;&minus; Лучшие среди общего зачета лиг в категориях: лучший среди младших участников,
+        лучшая девочка, лучший среди иногородних награждаются небольшими призами.
+
+      </p>
+
+      <p>
+&emsp;&emsp;<strong>VII Контакты</strong><br>
+&emsp;&emsp;&minus; Ответственный за проведения мероприятия:
+        гл. судья и руководитель клуба Го (Вейчи)
+        МГДДиМ Грунковский Юрий Анатольевич, тел. +375293699294.<br>
+&emsp;&emsp;&minus; Ответственный со стороны Китайского культурного центра: Чжу Пэнфэй.<br>
+&emsp;&emsp;&minus; Дополнительную информацию смотрите на сайте:
+        <a href="http://federationgo.by">Федерация Го Беларуси</a> и
+        <a href="https://vk.com/club23841735">Каменный Дракон</a>
+
+    </p>
+    </div>
+
+  </div>
+</div>

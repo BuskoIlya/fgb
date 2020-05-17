@@ -1,0 +1,112 @@
+<script>
+    $(document).ready(function () {
+        var data = {
+            'date': '4-5.04.2020',
+            'title': 'Кубок Вейчи',
+            'address': 'г. Минск, Китайский культурный центр, Клары Цеткин 51а',
+            'place_img': '../../../img/icons/city_minsk.jpg',
+            'www_ref': '',
+            'city': '(Минск, Беларусь)',
+            'author': 'Бусько Илья',
+            'photos': [
+            ],
+        };
+        $.get('../../blocks/t_news_top.html', function (template) {
+            $(template).tmpl(data).appendTo('#news_top_id');
+        });
+        //current_slider_photos.splice(0);
+        //current_slider_photos.push(news_2019[7].photos);
+        //html_in_div("html/template_slider.html", "#slider_id");
+        //html_in_div('html/news_archive/2019/results_2019_12_20.html', '#results_id');
+    });
+</script>
+
+<div class="inner_page">
+    <div class="data_panel">
+        <h1>Кубок Дружбы</h1>
+        <div id="news_top_id"></div>
+        <div id="slider_id" style="padding-bottom: 20px"></div>
+        <div id="results_id" style="margin-bottom: 20px"></div>
+
+        <div style="width:685px;text-align:justify;margin:0 auto;line-height:2;">
+
+            <p>
+                &emsp;&emsp;<strong>Описание</strong>: совместный белорусско-российский турнир по го.
+                Организован белорусским сообществом игроков го вместе с федерацией го России.
+                Приурочен ко дню независимости Республики Беларусь 3 июля – дню освобождения
+                столицы г. Минска от немецко-фашистских захватчиков.
+            </p>
+
+            <p>
+                &emsp;&emsp;<strong>I Цели и задачи</strong><br>
+                &emsp;&emsp;&minus; популяризация игры Го;<br>
+                &emsp;&emsp;&minus; повышение квалификации и совершенствование спортивного мастерства;<br>
+                &emsp;&emsp;&minus; знакомство го сообщества Беларуси и России;<br>
+                &emsp;&emsp;&minus; проведение спортивного турнира как праздничного мероприятия
+                в честь дня независимости Республики Беларусь.
+            </p>
+
+            <p>
+                &emsp;&emsp;<strong>II Сроки и место проведения соревнований</strong><br>
+                &emsp;&emsp;&minus; Соревнования проводятся 4-5 июля в г. Минске.<br>
+                &emsp;&emsp;&minus; <i style="text-decoration: underline">Место проведения</i>:<br>
+                Беларусь, Минск, ст. метро «Парк Челюскинцев»,
+                ул. Макаёнка 23А, банкетный зал «Комбинат Общественного Питания ОАО
+                Беламо-ммз Им. С.И. Вавилова».<br>
+                &emsp;&emsp;&minus; Соревнование является личным соревнованием.
+            </p>
+
+            <p>
+                &emsp;&emsp;<strong>III Требования к участникам соревнований,
+                регламент, условия проведения итогов</strong><br>
+                &emsp;&emsp;&minus; Соревнования проводятся по системе Мак-Магона в 6 туров.
+                Контроль времени – 30 минут основного времени, дополнительный контроль
+                времени (байоми) – 2х30 секунд, коми – 6.5 очков.<br>
+                &emsp;&emsp;&minus; Определение мест производится в соответствии с правилами системы
+                проведения соревнований. Победитель определяется по наибольшему количеству
+                набранный очков Мак-Магона. При равенстве очков у двух и более
+                участников для определения мест применяются следующие показатели
+                (в порядке убывания значимости):<br>
+                &emsp;&emsp;&emsp;&emsp;коэффициент Бухгольца;<br>
+                &emsp;&emsp;&emsp;&emsp;коэффициент Бергера.<br>
+                &emsp;&emsp;Организаторы имеют право на изменения регламента соревнований в случае необходимости.
+            </p>
+
+            <p>
+                &emsp;&emsp;<strong>IV Программа соревнований</strong><br>
+
+                &emsp;&emsp;<i style="text-decoration: underline">4 июля</i><br>
+
+                &emsp;&emsp;&emsp;&minus; 10:00 – 10:30 – регистрация участников<br>
+                &emsp;&emsp;&emsp;&minus; 10:40 – открытие соревнований<br>
+                &emsp;&emsp;&emsp;&minus; 11:00 – I тур<br>
+                &emsp;&emsp;&emsp;&minus; 12:30 – обеденный перерыв<br>
+                &emsp;&emsp;&emsp;&minus; 13:30 – II тур<br>
+                &emsp;&emsp;&emsp;&minus; 15:00 – III тур<br>
+
+                &emsp;&emsp;<i style="text-decoration: underline">5 июля</i><br>
+
+                &emsp;&emsp;&emsp;&minus; 10:00 – I тур<br>
+                &emsp;&emsp;&emsp;&minus; 11:30 – II тур<br>
+                &emsp;&emsp;&emsp;&minus; 13:00 – обеденный перерыв<br>
+                &emsp;&emsp;&emsp;&minus; 14:00 – III тур<br>
+                &emsp;&emsp;&emsp;&minus; 15:30 – закрытие кубка и награждение<br>
+            </p>
+
+            <p>
+                &emsp;&emsp;<strong>VII Контакты</strong><br>
+                &emsp;&emsp;&minus; Ответственный за проведения мероприятия:<br>
+                &emsp;&emsp;&emsp;белорусская сторона - Бусько Илья Владимирович<br>
+                &emsp;&emsp;&emsp;российская сторона - гл. судья Горжалцан Владимир Ильич<br>
+                &emsp;&emsp;<a href="http://federationgo.by">Федерация Го Беларуси</a> и
+                <a href="https://gofederation.ru">Российская Федерация Го</a>
+            </p>
+
+            <p>
+                &emsp;&emsp;<a href="http://www.federationgo.by/pages/belarus/minsk.php">
+                Информация о городе Минске</a>
+            </p>
+        </div>
+
+    </div>
+</div>
