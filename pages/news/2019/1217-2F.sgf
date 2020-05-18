@@ -1,0 +1,55 @@
+(;CA[windows-1251]GM[1]NW[29]NB[29]LT[]C[Gerasyutin Nikita (Беларусь, ч., 2 кю)
+Miguel_Angel_Antolinez (Испания, б., 1 дан)
+
+1. 54 ход белого (как-то медленно) и оценка общей ситуации на текущий момент.
+2. 67 ход черного (ошибка? Я бы просто съел разрезающий камень белых L6)
+3. 85 ход черного (ошибка? Я бы просто укрепил угол P17)
+
+- три основных стратегических ошибки за обеих игроков на мой взгляд. Что-нибудь еще?]
+AP[MultiGo:4.4.4]SZ[19]RR[Normal]GN[Hipatia-solidaslol(B) IGS]EV[Internet Go Server game\: Hipatia vs solidaslol]
+DT[2019-12-18]PC[IGS\:  igs.joyjoy.net 6969]PB[solidaslol]BR[1d?]PW[Hipatia]WR[1d ]
+KM[6.5]TM[3600]RE[W+9.5]US[Brought to you by IGS PANDANET]CP[
+  Copyright (c) PANDANET Inc. 2019
+  Permission to reproduce this game is given, provided proper credit is given.
+  No warrantee, implied or explicit, is understood.
+  Use of this game is an understanding and agreement of this notice.
+]
+MULTIGOGM[1]
+;B[pd]BL[3582];W[dp]WL[3597];B[pq]BL[3516];W[dd]WL[3587];B[fq]BL[3491];W[po]WL[3537]
+;B[cn]BL[3488];W[fp]WL[3471];B[gp]BL[3461];W[fo]WL[3467];B[dq]BL[3453];W[eq]WL[3458]
+;B[er]BL[3451];W[ep]WL[3456];B[gr]BL[3450];W[cq]WL[3451];B[dr]BL[3449];W[go]WL[3433]
+;B[hp]BL[3426];W[dj]WL[3406];B[cc]BL[3324];W[cd]WL[3393];B[dc]BL[3323];W[ec]WL[3392]
+;B[eb]BL[3321];W[fc]WL[3392];B[fb]BL[3321];W[gc]WL[3391];B[gb]BL[3321];W[hc]WL[3388]
+;B[gj]BL[3305];W[np]WL[3332];B[nq]BL[3234];W[mp]WL[3323];B[mq]BL[3229];W[lp]WL[3321]
+;B[qo]BL[3212];W[qn]WL[3314];B[qp]BL[3209];W[pm]WL[3285];B[ho]BL[3096];W[hn]WL[3261]
+;B[cl]BL[3060];W[el]WL[3244];B[cj]BL[3019];W[ci]WL[3239];B[dk]BL[2935];W[ek]WL[3202]
+;B[bi]BL[2934];W[ch]WL[3179];B[ej]BL[2843];W[di]WL[3177];B[bk]BL[2843];W[fj]WL[3128]
+;B[in]BL[2833];W[im]WL[3111];B[jm]BL[2827];W[jn]WL[3107];B[io]BL[2826];W[il]WL[3101]
+;B[jl]BL[2802];W[ik]WL[3099];B[fi]BL[2798];W[ei]WL[3097];B[jk]BL[2774];W[ij]WL[3095]
+;B[ln]BL[2752];W[kn]WL[3081];B[lm]BL[2747];W[jp]WL[3077];B[jj]BL[2689];W[ii]WL[3075]
+;B[mj]BL[2649];W[pj]WL[3064];B[qg]BL[2601];W[kh]WL[3018];B[mh]BL[2530];W[mg]WL[3008]
+;B[lh]BL[2512];W[lg]WL[3006];B[ki]BL[2493];W[jh]WL[2978];B[ok]BL[2478];W[pk]WL[2964]
+;B[mc]BL[2474];W[qc]WL[2963];B[pc]BL[2440];W[qd]WL[2960];B[qe]BL[2439];W[re]WL[2958]
+;B[rf]BL[2439];W[pe]WL[2957];B[qf]BL[2439];W[pb]WL[2952];B[ob]BL[2438];W[rb]WL[2926]
+;B[of]BL[2356];W[rd]WL[2905];B[pa]BL[2354];W[qb]WL[2903];B[ne]BL[2311];W[ld]WL[2890]
+;B[lc]BL[2244];W[kd]WL[2876];B[kc]BL[2211];W[jc]WL[2873];B[jb]BL[2180];W[ib]WL[2866]
+;B[jd]BL[2179];W[ic]WL[2865];B[md]BL[2170];W[le]WL[2859];B[bd]BL[2165];W[be]WL[2858]
+;B[bc]BL[2164];W[dl]WL[2857];B[ck]BL[2149];W[bh]WL[2856];B[bo]BL[2088];W[cp]WL[2811]
+;B[ah]BL[2076];W[ag]WL[2798];B[ai]BL[2075];W[bf]WL[2794];B[kr]BL[2027];W[kp]WL[2776]
+;B[jr]BL[2005];W[pp]WL[2769];B[qq]BL[1984];W[nh]WL[2761];B[ni]BL[1982];W[oi]WL[2758]
+;B[oj]BL[1973];W[pi]WL[2727];B[ol]BL[1963];W[rh]WL[2716];B[on]BL[1952];W[pn]WL[2714]
+;B[rn]BL[1908];W[rm]WL[2711];B[ro]BL[1905];W[om]WL[2706];B[nm]BL[1879];W[nn]WL[2687]
+;B[mn]BL[1869];W[oo]WL[2686];B[ml]BL[1738];W[iq]WL[2671];B[hr]BL[1729];W[hq]WL[2669]
+;B[gq]BL[1727];W[ir]WL[2665];B[is]BL[1726];W[qa]WL[2651];B[oa]BL[1696];W[kb]WL[2646]
+;B[lb]BL[1695];W[ja]WL[2644];B[ql]BL[1685];W[pl]WL[2641];B[rl]BL[1684];W[qm]WL[2640]
+;B[sm]BL[1684];W[og]WL[2632];B[qh]BL[1606];W[km]WL[2619];B[kl]BL[1548];W[ji]WL[2611]
+;B[li]BL[1507];W[qi]WL[2596];B[rj]BL[1504];W[ri]WL[2595];B[me]BL[1500];W[mf]WL[2558]
+;B[en]BL[1469];W[gm]WL[2526];B[cr]BL[1458];W[br]WL[2522];B[bp]BL[1456];W[bq]WL[2520]
+;B[fn]BL[1428];W[gn]WL[2517];B[sj]BL[1318];W[qk]WL[2508];B[rk]BL[1316];W[sl]WL[2505]
+;B[sn]BL[1300];W[nf]WL[2472];B[pf]BL[1277];W[dm]WL[2431];B[dn]BL[1275];W[cm]WL[2430]
+;B[bm]BL[1274];W[bs]WL[2418];B[fm]BL[1251];W[fl]WL[2410];B[la]BL[1219];W[cs]WL[2405]
+;B[ds]BL[1217];W[lq]WL[2403];B[lr]BL[1216];W[ad]WL[2390];B[ac]BL[1211];W[ae]WL[2387]
+;B[ha]BL[1208];W[oq]WL[2375];B[or]BL[1201];W[mo]WL[2366];B[ph]BL[1183];W[oh]WL[2362]
+;B[aq]BL[1171];W[ar]WL[2359];B[ap]BL[1170];W[hb]WL[2354];B[ga]BL[1158];W[se]WL[2333]
+;B[co]BL[1114];W[op]WL[2326];B[ka]BL[1092];W[jb]WL[2324];B[sg]BL[1081];W[si]WL[2295]
+;B[sk]BL[1071];W[pg]WL[2291];B[oe]BL[1064];W[qj]WL[2289];B[sl]BL[1063])

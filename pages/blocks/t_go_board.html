@@ -1,0 +1,71 @@
+<script>
+    $(document).ready(function () {
+        $("#board_item_template").tmpl(current_board).appendTo('#board_title_id');
+        addCells();
+    });
+</script>
+
+<script type='text/x-jquery-tmpl' id='board_item_template'>
+  <div class="row" style="margin:0 auto;padding-top:55px;
+    font-size:16px;">
+    <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+      <p style="text-align:right;margin-right: 40px">
+        ${g_player1}
+        <img src=${g_flag1} width="45" height="30px"
+          style="margin-left:10px"></img>
+      </p>
+      <div style="font-size:40px;text-align:right">
+        <img class="b_place_icon" src="${g_photo1}"/>
+        <strong style="margin-left: 50px;
+          margin-right:10px;color:black">&#9679;</strong>
+        <strong style="margin-right: 50px;">${g_score1}</strong>
+      </div>
+    </div>
+    <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+      <p style="text-align:left;margin-left: 40px">
+        <img src=${g_flag2} width="45" height="30px"
+          style="margin-right:10px"></img>
+        ${g_player2}
+      </p>
+      <div style="font-size:40px;text-align:left">
+        <strong style="margin-left: 50px">${g_score2}</strong>
+        <strong style="margin-left: 10px;
+          margin-right:50px;color:white">&#9679;</strong>
+        <img class="b_place_icon" src="${g_photo2}"/>
+      </div>
+    </div>
+  </div>
+</script>
+
+<div id="go_board_panel_id" style="text-align: center;
+  /*background-image: url('images/go_board/f5.jpg');*/ height: 707px">
+
+  <div id="board_title_id"></div>
+
+  <div class="go_board" style="font-size: 11px">
+  </div>
+  <p style="margin-top: 23px;">
+
+    <input id="white_dead_id" value="Снятые белые 0"
+           type="button" style="margin-right: 45px; width: 170px">
+
+    <input type="button" value="В начало" onclick="to_start()"
+           style="margin-right: 10px">
+    <input type="button" value="&#9668;&#9668;" onclick="prev_10_move()"
+           style="margin-right: 5px" title="На 10 ходов назад">
+    <input type="button" value="&#9668;" onclick="prev_move()"
+           style="margin-right: 5px" title="Ход назад">
+
+    <input id="go_board_current_move_id" value="0" title="Текущий ход"
+           type="button" style="margin-right: 5px; width: 40px">
+
+    <input type="button" value="&#9658;" onclick="next_move()"
+           style="margin-right: 5px" title="Ход вперёд">
+    <input type="button" value="&#9658;&#9658;" onclick="next_10_move()"
+           style="margin-right: 10px" title="На 10 ходов вперёд">
+    <input type="button" value="В конец" onclick="to_end()">
+
+    <input id="black_dead_id" value="Снятые чёрные 0"
+           type="button" style="margin-left: 45px; width: 170px">
+  </p>
+</div>
