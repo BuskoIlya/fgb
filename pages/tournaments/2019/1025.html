@@ -1,0 +1,207 @@
+<script>
+    $(document).ready(function () {
+        var data = {
+            'date': '25.10.2019',
+            'address': 'г. Минск, МДДМ, Старовиленский тракт 41',
+            'place_img': '../../../img/icons/city_minsk.jpg',
+            'www_ref': '',
+            'city': '(Минск, Беларусь)',
+            'author': 'Грунковский Юрий',
+            'photos': ["../../../img/by/news/2019/1025-01.jpg", "../../../img/by/news/2019/1025-02.jpg",
+                "../../../img/by/news/2019/1025-04.jpg",
+                "../../../img/by/news/2019/1025-05.jpg", "../../../img/by/news/2019/1025-06.jpg",
+                "../../../img/by/news/2019/1025-07.jpg", "../../../img/by/news/2019/1025-08.jpg",
+                "../../../img/by/news/2019/1025-09.jpg", "../../../img/by/news/2019/1025-10.jpg",
+                "../../../img/by/news/2019/1025-11.jpg", "../../../img/by/news/2019/1025-12.jpg",
+                "../../../img/by/news/2019/1025-13.jpg", "../../../img/by/news/2019/1025.jpg",
+                "../../../img/by/news/2019/1025-15.jpg"],
+        };
+
+        $.get('../../blocks/t_news_top.html', function (template) {
+            $(template).tmpl(data).appendTo('#news_top_id');
+        });
+
+        current_slider_photos.splice(0);
+        current_slider_photos = data.photos;
+        current_slider_photo_titles.splice(0);
+        $("#slider_id").load("../../blocks/t_index_slider.html");
+
+        for (let i = 0; i < r10251.length; i++) {
+            $('#t_10251').tmpl(r10251[i]).appendTo('#results_table_id1');
+        }
+        decorate_tournament('#results_table_id1', [5, 6, 7, 8]);
+
+        for (let i = 0; i < r10252.length; i++) {
+            $('#t_10252').tmpl(r10252[i]).appendTo('#results_table_id2');
+        }
+        decorate_tournament('#results_table_id2', [5, 6, 7]);
+
+        for (let i = 0; i < r10253.length; i++) {
+            $('#t_10252').tmpl(r10253[i]).appendTo('#results_table_id3');
+        }
+        decorate_tournament('#results_table_id3', [5, 6, 7]);
+
+        for (let i = 0; i < r10254.length; i++) {
+            $('#t_10252').tmpl(r10254[i]).appendTo('#results_table_id4');
+        }
+        decorate_tournament('#results_table_id4', [5, 6, 7]);
+    });
+</script>
+
+<div class="inner_page">
+    <div class="data_panel">
+        <h1>Осенний лист</h1>
+        <div id="news_top_id"></div>
+        <div id="slider_id" style="padding-bottom: 20px"></div>
+        <div style="margin-bottom: 20px">
+            <div class="table-responsive fgb_table">
+                <table class="table table-striped table-hover table-bordered">
+                    <caption style="background-color: #fcfcfc; color: #333;
+        text-align: center; font-size: 15px">
+                        <span><strong>Белые</strong></span>
+                    </caption>
+                    <thead>
+                    <tr class="active">
+                        <th>Место</th>
+                        <th>Игрок</th>
+                        <th>Город</th>
+                        <th>Ранг</th>
+                        <th>Рейтинг</th>
+                        <th>1</th>
+                        <th>2</th>
+                        <th>3</th>
+                        <th>4</th>
+                        <th>Очки</th>
+                        <th>SOS</th>
+                        <th>SDOS</th>
+                        <th>SOSOS</th>
+                    </tr>
+                    </thead>
+                    <tbody id="results_table_id1">
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div style="margin-bottom: 20px">
+            <div class="table-responsive fgb_table">
+                <table class="table table-striped table-hover table-bordered">
+                    <caption style="background-color: #efda5a; color: #333;
+        text-align: center; font-size: 15px">
+                        <span><strong>Желтые</strong></span>
+                    </caption>
+                    <thead>
+                    <tr class="active">
+                        <th>Место</th>
+                        <th>Игрок</th>
+                        <th>Город</th>
+                        <th>Ранг</th>
+                        <th>Рейтинг</th>
+                        <th>1</th>
+                        <th>2</th>
+                        <th>3</th>
+                        <th>Очки</th>
+                        <th>SOS</th>
+                        <th>SDOS</th>
+                        <th>SOSOS</th>
+                    </tr>
+                    </thead>
+                    <tbody id="results_table_id2">
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div style="margin-bottom: 20px">
+            <div class="table-responsive fgb_table">
+                <table class="table table-striped table-hover table-bordered">
+                    <caption style="background-color: darkorange; color: #333;
+        text-align: center; font-size: 15px">
+                        <span><strong>Оранжевые</strong></span>
+                    </caption>
+                    <thead>
+                    <tr class="active">
+                        <th>Место</th>
+                        <th>Игрок</th>
+                        <th>Город</th>
+                        <th>Ранг</th>
+                        <th>Рейтинг</th>
+                        <th>1</th>
+                        <th>2</th>
+                        <th>3</th>
+                        <th>Очки</th>
+                        <th>SOS</th>
+                        <th>SDOS</th>
+                        <th>SOSOS</th>
+                    </tr>
+                    </thead>
+                    <tbody id="results_table_id3">
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div style="margin-bottom: 20px">
+            <div class="table-responsive fgb_table">
+                <table class="table table-striped table-hover table-bordered">
+                    <caption style="background-color: red; color: #333;
+        text-align: center; font-size: 15px">
+                        <span><strong>Красные</strong></span>
+                    </caption>
+                    <thead>
+                    <tr class="active">
+                        <th>Место</th>
+                        <th>Игрок</th>
+                        <th>Город</th>
+                        <th>Ранг</th>
+                        <th>Рейтинг</th>
+                        <th>1</th>
+                        <th>2</th>
+                        <th>3</th>
+                        <th>Очки</th>
+                        <th>SOS</th>
+                        <th>SDOS</th>
+                        <th>SOSOS</th>
+                    </tr>
+                    </thead>
+                    <tbody id="results_table_id4">
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script type='text/x-jquery-tmpl' id='t_10251'>
+  <tr>
+    <td>${place}</td>
+    <td>${player}</td>
+    <td>${city}</td>
+    <td>${rank}</td>
+    <td>${score}</td>
+    <td>${game1}</td>
+    <td>${game2}</td>
+    <td>${game3}</td>
+    <td>${game4}</td>
+    <td>${total}</td>
+    <td>${sos}</td>
+    <td>${sdos}</td>
+    <td>${sosos}</td>
+  </tr>
+
+</script>
+
+<script type='text/x-jquery-tmpl' id='t_10252'>
+  <tr>
+    <td>${place}</td>
+    <td>${player}</td>
+    <td>${city}</td>
+    <td>${rank}</td>
+    <td>${score}</td>
+    <td>${game1}</td>
+    <td>${game2}</td>
+    <td>${game3}</td>
+    <td>${total}</td>
+    <td>${sos}</td>
+    <td>${sdos}</td>
+    <td>${sosos}</td>
+  </tr>
+
+</script>

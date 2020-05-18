@@ -1,0 +1,72 @@
+<script>
+    $(document).ready(function () {
+        var data = {
+            'date': '20,27.09.2019',
+            'address': 'г. Минск, МДДМ, Старовиленский тракт 41',
+            'place_img': '../../../img/icons/city_minsk.jpg',
+            'www_ref': '',
+            'city': '(Минск, Беларусь)',
+            'author': 'Грунковский Юрий',
+            'photos': ["../../../img/by/news/2019/0920.jpg", "../../../img/by/news/2019/0920-02.jpg",
+                "../../../img/by/news/2019/0920-03.jpg", "../../../img/by/news/2019/0920-04.jpg",
+                "../../../img/by/news/2019/0920-05.jpg", "../../../img/by/news/2019/0920-06.jpg",
+                "../../../img/by/news/2019/0920-07.jpg", "../../../img/by/news/2019/0920-08.jpg",
+                "../../../img/by/news/2019/0920-09.jpg", "../../../img/by/news/2019/0920-10.jpg"],
+        };
+
+        $.get('../../blocks/t_news_top.html', function (template) {
+            $(template).tmpl(data).appendTo('#news_top_id');
+        });
+
+        current_slider_photos.splice(0);
+        current_slider_photos = data.photos;
+        current_slider_photo_titles.splice(0);
+        $("#slider_id").load("../../blocks/t_index_slider.html");
+
+        for (let i = 0; i < r0920.length; i++) {
+            $('#t_20190920').tmpl(r0920[i]).appendTo('#results_table_id');
+        }
+        decorate_tournament('#results_table_id', [4,5,6]);
+    });
+</script>
+
+<div class="inner_page">
+    <div class="data_panel">
+        <h1>Belarus Study Open</h1>
+        <div id="news_top_id"></div>
+        <div id="slider_id" style="padding-bottom: 20px"></div>
+        <div id="results_id" style="margin-bottom: 20px">
+            <div class="table-responsive fgb_table">
+                <table class="table table-striped table-hover table-bordered">
+                    <thead>
+                    <tr class="active">
+                        <th>Место</th>
+                        <th>Игрок</th>
+                        <th>Город</th>
+                        <th>Ранг</th>
+                        <th>1</th>
+                        <th>2</th>
+                        <th>3</th>
+                        <th>Очки</th>
+                    </tr>
+                    </thead>
+                    <tbody id="results_table_id">
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script type='text/x-jquery-tmpl' id='t_20190831'>
+  <tr>
+    <td>${place}</td>
+    <td>${player}</td>
+    <td>${city}</td>
+    <td>${rank}</td>
+    <td>${game1}</td>
+    <td>${game2}</td>
+    <td>${game3}</td>
+    <td>${total}</td>
+  </tr>
+</script>

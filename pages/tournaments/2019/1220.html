@@ -1,0 +1,240 @@
+<script>
+    $(document).ready(function () {
+        var data = {
+            'date': '20.12.2019',
+            'address': 'г. Минск, МДДМ, Старовиленский тракт 41',
+            'place_img': '../../../img/icons/city_minsk.jpg',
+            'www_ref': '',
+            'city': '(Минск, Беларусь)',
+            'author': 'Грунковский Юрий',
+            'photos': ["../../../img/by/news/2019/1220.jpg", "../../../img/by/news/2019/1220-02.jpg",
+                "../../../img/by/news/2019/1220-03.jpg", "../../../img/by/news/2019/1220-04.jpg",
+                "../../../img/by/news/2019/1220-05.jpg", "../../../img/by/news/2019/1220-06.jpg",
+                "../../../img/by/news/2019/1220-07.jpg", "../../../img/by/news/2019/1220-08.jpg",
+                "../../../img/by/news/2019/1220-09.jpg", "../../../img/by/news/2019/1220-10.jpg",
+                "../../../img/by/news/2019/1220-11.jpg", "../../../img/by/news/2019/1220-12.jpg",
+                "../../../img/by/news/2019/1220-14.jpg",
+                "../../../img/by/news/2019/1220-15.jpg", "../../../img/by/news/2019/1220-16.jpg",
+                "../../../img/by/news/2019/1220-17.jpg", "../../../img/by/news/2019/1220-18.jpg",],
+        };
+
+        $.get('../../blocks/t_news_top.html', function (template) {
+            $(template).tmpl(data).appendTo('#news_top_id');
+        });
+
+        current_slider_photos.splice(0);
+        current_slider_photos = data.photos;
+        current_slider_photo_titles.splice(0);
+        $("#slider_id").load("../../blocks/t_index_slider.html");
+
+        for (let i = 0; i < r12201.length; i++) {
+            $('#t_12201').tmpl(r12201[i]).appendTo('#results_table_id1');
+        }
+        decorate_tournament('#results_table_id1', [4, 5, 6, 7, 8]);
+
+        for (let i = 0; i < r12202.length; i++) {
+            $('#t_12201').tmpl(r12202[i]).appendTo('#results_table_id2');
+        }
+        decorate_tournament('#results_table_id2', [4, 5, 6, 7]);
+    });
+</script>
+
+<div class="inner_page">
+    <div class="data_panel">
+        <h1>9-ый рождественский турнир</h1>
+        <div id="news_top_id"></div>
+        <div id="slider_id" style="padding-bottom: 20px"></div>
+        <div style="margin-bottom: 20px">
+            <div class="table-responsive fgb_table">
+                <table class="table table-striped table-hover table-bordered">
+                    <caption style="color: #333;
+        text-align: center; font-size: 15px">
+                        <span><strong>Дети</strong></span>
+                    </caption>
+                    <thead>
+                    <tr class="active">
+                        <th>Место</th>
+                        <th>Игрок</th>
+                        <th>Город</th>
+                        <th>Ранг</th>
+                        <th>1</th>
+                        <th>2</th>
+                        <th>3</th>
+                        <th>4</th>
+                        <th>5</th>
+                        <th>Очки</th>
+                        <th>MMS</th>
+                        <th>SOS</th>
+                        <th>SDOS</th>
+                    </tr>
+                    </thead>
+                    <tbody id="results_table_id1">
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div style="margin-bottom: 20px">
+            <div class="table-responsive fgb_table">
+                <table class="table table-striped table-hover table-bordered">
+                    <caption style="color: #333;
+        text-align: center; font-size: 15px">
+                        <span><strong>Взрослые</strong></span>
+                    </caption>
+                    <thead>
+                    <tr class="active">
+                        <th>Место</th>
+                        <th>Игрок</th>
+                        <th>Город</th>
+                        <th>Ранг</th>
+                        <th>1</th>
+                        <th>2</th>
+                        <th>3</th>
+                        <th>4</th>
+                        <th>Очки</th>
+                        <th>MMS</th>
+                        <th>SOS</th>
+                        <th>SDOS</th>
+                    </tr>
+                    </thead>
+                    <tbody id="results_table_id2">
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <div style="width: 685px;text-align: justify;margin: 0 auto">
+            <p>
+                &emsp;&emsp;Фестиваль включает два отдельных турнира: взрослый и детский, оба форовые
+                (максимальная фора 9 камней), по швейцарской системе.
+                Однако, возможно, при большом количестве участников введение 1-2 очка макмагона,
+                что также позволит избежать встречи игроков с разницей в силе более 9 камней.
+            </p>
+
+            <p>
+                &emsp;&emsp;<strong>1) Цели и задачи</strong><br>
+                &emsp;&emsp;&minus; популяризация игры Го;<br>
+                &emsp;&emsp;&minus; повышение квалификации и совершенствование спортивного мастерства;<br>
+                &emsp;&emsp;&minus; проведение фестиваля как праздничного мероприятия нового года.
+            </p>
+
+            <p>
+                &emsp;&emsp;<strong>2) Детский турнир</strong><br>
+                &emsp;&emsp;Место: МГДДиМ, старовиленский тракт, 41, каб. 303<br>
+                &emsp;&emsp;Время: 20.12 (Пт) и 22.12 (Вс) в 5 туров.<br>
+                &emsp;&emsp;К участию допускаются дети до 16 лет, твердо усвоившие правила игры.<br>
+                &emsp;&emsp;Контроль времени 30 мин + канадское байоми (25 ходов за 10 мин).<br>
+            </p>
+
+            <p>
+                &emsp;&emsp;<i style="text-decoration: underline">Подробное расписание детского турнира:</i><br>
+                &emsp;&emsp;1 день, пятница 20.12<br>
+                &emsp;&emsp;17.00-17.30 - Регистрация участников, расстановка наборов и часов.<br>
+                &emsp;&emsp;17.30 - открытие фестиваля для детей, напоминание правил турнира.<br>
+                &emsp;&emsp;17.55 - окончательная жеребьевка.<br>
+                &emsp;&emsp;I тур: 18.00 - 19.30<br>
+                &emsp;&emsp;II тур: 19.30 - 21.00<br>
+            </p>
+
+            <p>
+                &emsp;&emsp;<i style="text-decoration: underline">2 день, воскресение 22.12</i><br>
+                &emsp;&emsp;12.00 - 12.15 - Проверка участников, расстановка наборов и часов.<br>
+                &emsp;&emsp;12.15 - 12.30 - жеребьевка.<br>
+                &emsp;&emsp;III тур: 12.30 - 14.00<br>
+                &emsp;&emsp;Время для обеда: 14.00 - 14.30<br>
+                &emsp;&emsp;IV тур: 14.30 - 16.00<br>
+                &emsp;&emsp;16.00 - 16.30 - Новогодняя викторина, загадки, квесты.<br>
+                &emsp;&emsp;V тур: 16.30 - 18.00<br>
+                &emsp;&emsp;Награждение: 18.00 - 19.00<br>
+                &emsp;&emsp;(При быстрой игре, дети все-таки, возможно мероприятие закончится на 1-2 часа раньше).
+            </p>
+
+            <p>
+                &emsp;&emsp;Взнос на детский турнир 13р в кассу дворца.
+            </p>
+
+            <p>
+                &emsp;&emsp;<i style="text-decoration: underline">Награждение:</i><br>
+                &emsp;&emsp;Первые три места - Кубки,
+                7 медалей в дополнительных категориях,
+                дополнительные призы от учителя - несколько кружек с логотипом рождественского фестиваля Го, набор Го,
+                каждому участнику сладкий приз и закладка для книг с джосэками Го.
+            </p>
+
+            <p>
+                &emsp;&emsp;<strong>3) Взрослый турнир</strong><br>
+                &emsp;&emsp;Место: центр обучения БрейнФорс, ул. Богдановича, д. 155, оф. 502.<br>
+                &emsp;&emsp;Время: 21.12 (Сб) 4 тура.<br>
+                &emsp;&emsp;К участию допускаются дети с силой игры 16к и сильнее, и все взрослые.<br>
+                Контроль времени 30 мин + канадское байоми (25 ходов за 10 мин),
+                механические часы.
+            </p>
+
+            <p>
+                &emsp;&emsp;<i style="text-decoration: underline">Подробное расписание взрослого турнира:</i><br>
+                &emsp;&emsp;Суббота 21.12<br>
+                &emsp;&emsp;10.00-10.15 - Регистрация участников, расстановка наборов и часов.<br>
+                &emsp;&emsp;10.15 - открытие фестиваля для взрослых, напоминание правил турнира.<br>
+                &emsp;&emsp;10.25 - окончательная жеребьевка.<br>
+                &emsp;&emsp;I тур: 10.30 - 12.30<br>
+                &emsp;&emsp;II тур: 12.30 - 14.30<br>
+                &emsp;&emsp;Время для обеда: 14.30 - 15.30<br>
+                &emsp;&emsp;III тур: 15.30 - 17.30<br>
+                &emsp;&emsp;IV тур: 17.30 - 19.30<br>
+                &emsp;&emsp;Награждение: 19.30 - 20.00<br>
+            </p>
+
+            <p>
+                &emsp;&emsp;Взнос на взрослый турнир:
+                детям -13р; взрослым - 20р.
+            </p>
+
+            <p>
+                &emsp;&emsp;<i style="text-decoration: underline">Награждение:</i><br>
+                &emsp;&emsp;Первые три места - Кубки,
+                Кружка с логотипом рождественского фестиваля Го - лучшим среди общего зачета в категориях: лучший среди юниоров, лучший среди участников, впервые пришедшим на турнир, лучший среди иногородних,
+                дополнительные призы - японские журналы и закладки для книг.
+                Победители имеют право только на один приз. <br>
+            </p>
+            <p>
+                &emsp;&emsp;<strong>4) Предварительная регистрация обязательна</strong>, до 20 декабря,
+                в комментариях к этому сообщению в группе <a href="https://vk.com/club23841735">Каменный Дракон</a> или при связи со мной, главный судья Грунковский Юрий Анатольевич: +37529-3699294.
+
+            </p>
+        </div>
+    </div>
+</div>
+
+<script type='text/x-jquery-tmpl' id='t_12201'>
+  <tr>
+    <td>${place}</td>
+    <td>${player}</td>
+    <td>${city}</td>
+    <td>${rank}</td>
+    <td>${game1}</td>
+    <td>${game2}</td>
+    <td>${game3}</td>
+    <td>${game4}</td>
+    <td>${game5}</td>
+    <td>${total}</td>
+    <td>${mms}</td>
+    <td>${sos}</td>
+    <td>${sdos}</td>
+  </tr>
+</script>
+
+<script type='text/x-jquery-tmpl' id='t_12202'>
+  <tr>
+    <td>${place}</td>
+    <td>${player}</td>
+    <td>${city}</td>
+    <td>${rank}</td>
+    <td>${game1}</td>
+    <td>${game2}</td>
+    <td>${game3}</td>
+    <td>${game4}</td>
+    <td>${total}</td>
+    <td>${mms}</td>
+    <td>${sos}</td>
+    <td>${sdos}</td>
+  </tr>
+</script>

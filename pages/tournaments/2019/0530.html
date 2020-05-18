@@ -1,0 +1,96 @@
+<script>
+    $(document).ready(function () {
+        var data = {
+            'date': '30.05-07.06.2019',
+            'address': 'Япония, Префектура Симанэ, г. Мацуэ, 島根県松江市殿町',
+            'place_img': '../../../img/icons/city_tokio.jpg',
+            'www_ref': 'https://www.nihonkiin.or.jp/event/amakisen/worldama/40/result.html',
+            'city': '(Мацуэ, Япония)',
+            'author': 'Бусько Илья',
+            'photos': ["../../../img/by/news/2019/0530-01.jpg", "../../../img/by/news/2019/0530-02.jpg",
+                "../../../img/by/news/2019/0530-03.jpg", "../../../img/by/news/2019/0530-04.jpg",
+                "../../../img/by/news/2019/0530-05.jpg", "../../../img/by/news/2019/0530-06.jpg",
+                "../../../img/by/news/2019/0530-07.jpg", "../../../img/by/news/2019/0530.jpg",
+                "../../../img/by/news/2019/0530-09.jpg", "../../../img/by/news/2019/0530-10.jpg",
+                "../../../img/by/news/2019/0530-11.jpg", "../../../img/by/news/2019/0530-12.jpg",
+                "../../../img/by/news/2019/0530-14.jpg", "../../../img/by/news/2019/0530-15.jpg",
+                "../../../img/by/news/2019/0530-16.jpg", "../../../img/by/news/2019/0530-17.jpg",
+                "../../../img/by/news/2019/0530-18.jpg", "../../../img/by/news/2019/0530-19.jpg",
+                "../../../img/by/news/2019/0530-20.jpg", "../../../img/by/news/2019/0530-21.jpg",
+                "../../../img/by/news/2019/0530-22.jpg", "../../../img/by/news/2019/0530-23.jpg",
+                "../../../img/by/news/2019/0530-24.jpg"],
+        };
+
+        $.get('../../blocks/t_news_top.html', function (template) {
+            $(template).tmpl(data).appendTo('#news_top_id');
+        });
+
+        current_slider_photos.splice(0);
+        current_slider_photos = data.photos;
+        current_slider_photo_titles.splice(0);
+        $("#slider_id").load("../../blocks/t_index_slider.html");
+
+        for (let i = 0; i < r0530.length; i++) {
+            $('#t_20190530').tmpl(r0530[i]).appendTo('#results_table_id');
+        }
+        decorate_tournament('#results_table_id', [4,5,6,7,8,9,10,11]);
+        select_blue_color_our_players('#results_table_id', [0,1,2,3,12,13,14], 3);
+    });
+</script>
+
+<div class="inner_page">
+    <div class="data_panel">
+        <h1>Чемпионат мира</h1>
+        <div id="news_top_id"></div>
+        <div id="slider_id" style="padding-bottom: 20px"></div>
+        <div id="results_id" style="margin-bottom: 20px">
+            <div class="table-responsive fgb_table">
+                <table class="table table-striped table-hover table-bordered">
+                    <thead>
+                    <tr class="active">
+                        <th>Место</th>
+                        <th>Номер</th>
+                        <th>Игрок</th>
+                        <th>Страна</th>
+                        <th>1</th>
+                        <th>2</th>
+                        <th>3</th>
+                        <th>4</th>
+                        <th>5</th>
+                        <th>6</th>
+                        <th>7</th>
+                        <th>8</th>
+                        <th>Очки</th>
+                        <th>SOS</th>
+                        <th>SOSOS</th>
+                    </tr>
+                    </thead>
+                    <tbody id="results_table_id">
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script type='text/x-jquery-tmpl' id='t_20190530'>
+  <tr>
+    <td>${place}</td>
+    <td>${number}</td>
+    <td>${player}</td>
+    <td style="text-align:center">
+      <img src="../../../${country_flag}" title=${country} width="30" height="20px"></img>
+    </td>
+    <td>${game1}</td>
+    <td>${game2}</td>
+    <td>${game3}</td>
+    <td>${game4}</td>
+    <td>${game5}</td>
+    <td>${game6}</td>
+    <td>${game7}</td>
+    <td>${game8}</td>
+    <td>${total}</td>
+    <td>${sos}</td>
+    <td>${sosos}</td>
+  </tr>
+</script>
