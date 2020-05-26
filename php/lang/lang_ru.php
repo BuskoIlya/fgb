@@ -73,6 +73,7 @@ $Lang = array(
     'reg_father' => 'Отчество',
     'reg_birth_date' => 'Дата рождения',
     'reg_city' => 'Город',
+    'has_sign' => 'Подписаться на новости',
 
     'btn_ok' => 'Подтвердить',
     'btn_cancel' => 'Отменить',

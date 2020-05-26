@@ -72,6 +72,7 @@ $Lang = array(
     'reg_father' => 'Father name',
     'reg_birth_date' => 'Birth date',
     'reg_city' => 'City',
+    'has_sign' => 'Subscribe to news',
 
     'btn_ok' => 'Ok',
     'btn_cancel' => 'Cancel',

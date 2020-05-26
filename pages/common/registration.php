@@ -42,6 +42,12 @@
                 <p><input class="input_text"
                           type="text" id="city" value=""
                           placeholder="<?php echo $Lang['reg_city'] ?>"></p>
+                <p class="remember_checkbox">
+                    <label>
+                        <input id="has_sign" type="checkbox">
+                        <?php echo $Lang['has_sign'] ?>
+                    </label>
+                </p>
 
                 <p>
                     <div style="text-align: right">
@@ -71,6 +77,7 @@
         var father = $('#father').val();
         var birth_date = $('#birth_date').val();
         var city = $('#city').val();
+        var has_sign = $('#has_sign').prop('checked').toString();
 
         $.ajax({
             url: '../../php/do_register.php',
@@ -79,7 +86,8 @@
             data: {'user_login': user_login, 'email': email,
                 'user_password': user_password,
             'family': family, 'name': name, 'father': father,
-            'birth_date': birth_date, 'city': city},
+            'birth_date': birth_date, 'city': city,
+            'has_sign': has_sign},
             dataType: 'html',
             success: function (data) {
                 if (data == 'Successful') {

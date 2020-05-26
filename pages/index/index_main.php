@@ -101,7 +101,7 @@ require_once 'php/lang/lang_index_' . $_SESSION['lang'] . '.php';
             success: function (data) {
                 news_2020.splice(0);
                 news_2020 = data;
-                $("#main_news_id").load("pages/index/index_news.html");
+                $("#main_news_id").load("pages/index/index_news.php");
             }
         });
     }

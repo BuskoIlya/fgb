@@ -105,14 +105,12 @@
   }
 }
 
-.input_submit {
-  padding: 0 18px;
-  height: 30px;
-  font-size: @fs_text;
+.btn_decoration {
   font-weight: bold;
   color: #555;
   background: white;
   border: 1px solid @btn_border_color;
+  border-radius: 2px;
   outline: 0;
   -webkit-box-sizing: content-box;
   -moz-box-sizing: content-box;
@@ -126,9 +124,22 @@
   &:hover {
     background: #eae9ec;
     border-color: @btn_border_color;
-    -webkit-box-shadow: inset 0 0 3px rgba(0, 0, 0, 0.2);
-    box-shadow: inset 0 0 3px rgba(0, 0, 0, 0.2);
+    -webkit-box-shadow: inset 0 0 1px rgba(0, 0, 0, 0.2);
+    box-shadow: inset 0 0 1px rgba(0, 0, 0, 0.2);
   }
+}
+
+.input_submit {
+  padding: 0 18px;
+  height: 30px;
+  font-size: @fs_text;
+  .btn_decoration;
+}
+
+.menu_icon {
+  font-size: @fs_menu_panel_title;
+  padding: 5px;
+  .btn_decoration;
 }
 
 // -------------------------------------------

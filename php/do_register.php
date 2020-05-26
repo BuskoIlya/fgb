@@ -10,6 +10,7 @@ $name = trim(filter_var($_POST['name'], FILTER_SANITIZE_STRING));
 $father = trim(filter_var($_POST['father'], FILTER_SANITIZE_STRING));
 $city = trim(filter_var($_POST['city'], FILTER_SANITIZE_STRING));
 $birth_date = trim(filter_var($_POST['birth_date'], FILTER_SANITIZE_STRING));
+$has_sign = $_POST['has_sign'];
 
 $error = '';
 if (strlen($user_login) == 0)
@@ -41,12 +42,12 @@ if ($error != '') {
 require_once 'fgb_db_connect.php';
 
 $sql = 'INSERT INTO users(login, short_name, full_name, email, 
-    password, city, birth_date) 
-    VALUES(?, ?, ?, ?, ?, ?, ?)';
+    password, city, birth_date, role, has_sign) 
+    VALUES(?, ?, ?, ?, ?, ?, ?, ?, ?)';
 $query = $pdo->prepare($sql);
 $query->execute([$user_login, $family . ' ' . $name,
     $family . ' ' . $name . ' ' . $father,
-    $email, $user_password, $city, $birth_date]);
+    $email, $user_password, $city, $birth_date, "", $has_sign]);
 
 $_SESSION['info_text'] = $Lang['user_registered'];
 echo 'Successful';
