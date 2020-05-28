@@ -33,8 +33,8 @@ if ($user == null || $user->id == 0) {
     echo $Lang['wrong_user'];
     $_SESSION['error_text'] = $Lang['wrong_user'];
 } else {
-    setcookie('login', $user->full_name, time() + 3600, "/");
-    setcookie('user_role', $user->role, time() + 3600, "/");
+    setcookie('login', $user->full_name, time() + 30 * 24 * 3600, "/");
+    setcookie('user_role', $user->role, time() + 30 * 24 * 3600, "/");
     echo 'Successful';
 }
 ?>
