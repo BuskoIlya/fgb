@@ -7,10 +7,10 @@
     $website_title = $Lang['page_players'];
     require '../../blocks/head_news.php';
     ?>
+    <script type="text/javascript" src="0323.js"></script>
     <script type="text/javascript" src="../../../js/index.js"></script>
     <script type="text/javascript" src="../../../libs/jssor.slider.min.js"></script>
     <script type="text/javascript" src="../../../js/sliders/index_slider.js"></script>
-    <script type="text/javascript" src="0323.js"></script>
 </head>
 <body>
 <div id="fgb_body">

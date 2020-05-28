@@ -19,13 +19,19 @@ class Player0329 {
 
 var r0329 = [];
 
-$.get('0329.txt', function (data) {
-    let lines = data.split("\n");
-    $.each(lines, function (n, elem) {
-            let f = elem.split(",");
-            let player = new Player0329(
-                f[0], f[1], f[2], f[3], f[4], f[5], f[6], f[7], f[8], f[9], f[10], f[11]);
-            r0329.push(player);
-        }
-    );
+$.ajax({
+    url: '0329.txt',
+    dataType: 'text',
+    async: false,
+
+    success: function (data) {
+        let lines = data.split("\n");
+        $.each(lines, function (n, elem) {
+                let f = elem.split(",");
+                let player = new Player0329(
+                    f[0], f[1], f[2], f[3], f[4], f[5], f[6], f[7], f[8], f[9], f[10], f[11]);
+                r0329.push(player);
+            }
+        );
+    }
 });
