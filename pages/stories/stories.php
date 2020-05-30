@@ -1,4 +1,4 @@
-<html>
+<html prefix="og: http://ogp.me/ns#">
 <head>
     <?php
     require '../blocks/set_lang.php';
@@ -6,6 +6,9 @@
     $website_title = $Lang['page_stories'];
     require '../blocks/head_pages.php';
     ?>
+
+    <meta property="og:image" content="../../img/og/page_stories.jpg"/>
+    <meta property="og:description" content="ФГБ: интересные истории о го"/>
 </head>
 <body>
 <div id="fgb_body">

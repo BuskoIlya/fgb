@@ -1,4 +1,4 @@
-<html>
+<html prefix="og: http://ogp.me/ns#">
 <head>
     <link rel="stylesheet" type="text/css"
           href="../../libs/galleria_slider/galleria.folio.css"/>
@@ -11,6 +11,9 @@
     $website_title = $Lang['page_brainforce'];
     require '../blocks/head_pages.php';
     ?>
+
+    <meta property="og:image" content="../../img/og/page_brainforce.jpg"/>
+    <meta property="og:description" content="ФГБ: школа го в Минске 'Брейнфорс'"/>
 </head>
 <body>
 <div id="fgb_body">

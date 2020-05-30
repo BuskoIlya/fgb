@@ -1,4 +1,4 @@
-<html>
+<html prefix="og: http://ogp.me/ns#">
 <head>
     <link rel="stylesheet/less" href="../../../css/index.less">
     <?php
@@ -11,6 +11,8 @@
     <script type="text/javascript" src="../../../js/index.js"></script>
     <script type="text/javascript" src="../../../libs/jssor.slider.min.js"></script>
     <script type="text/javascript" src="../../../js/sliders/index_slider.js"></script>
+
+    <meta property="og:image" content="../../../img/og/page_misnk_cup_2018.jpg"/>
 </head>
 <body>
 <div id="fgb_body">

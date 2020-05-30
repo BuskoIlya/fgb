@@ -1,4 +1,4 @@
-<html>
+<html prefix="og: http://ogp.me/ns#">
 <head>
     <link rel="stylesheet/less" href="../../css/tab_page.less">
 
@@ -8,6 +8,9 @@
     $website_title = $Lang['page_go_manual'];
     require '../blocks/head_pages.php';
     ?>
+
+    <meta property="og:image" content="../../img/og/page_go_manual.jpg"/>
+    <meta property="og:description" content="ФГБ, Го: правила игры, термины, сентэ, готэ, примеры партий"/>
 </head>
 <body>
 <div id="fgb_body">

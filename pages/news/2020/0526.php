@@ -1,4 +1,4 @@
-<html>
+<html prefix="og: http://ogp.me/ns#">
 <head>
     <link rel="stylesheet/less" href="../../../css/go_board.less">
     <?php
@@ -10,6 +10,8 @@
     <script type="text/javascript" src="../../../js/countries.js"></script>
     <script type="text/javascript" src="0526.js"></script>
     <script type="text/javascript" src="../../../js/go_board2.js"></script>
+
+    <meta property="og:image" content="../../../img/og/20200526_georgia-belarus.jpg"/>
 </head>
 <body>
 <div id="fgb_body">

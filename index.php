@@ -1,4 +1,4 @@
-<html>
+<html prefix="og: http://ogp.me/ns#">
 <head>
     <link rel="stylesheet/less" href="css/index.less">
 
@@ -8,6 +8,10 @@
     $website_title = $Lang['website_title'];
     require 'pages/blocks/head.php';
     ?>
+
+    <meta property="og:image" content="img/og/page_index.jpg"/>
+    <meta property="og:description" content="ФГБ — сайт федерации го Беларуси. Все события
+  внутри страны и в мире, рассказы о го, книги и видео разборы партий."/>
 </head>
 <body>
 <div id="fgb_body">

@@ -1,4 +1,4 @@
-<html>
+<html prefix="og: http://ogp.me/ns#">
 <head>
     <link rel="stylesheet/less" href="../../css/tab_page.less">
 
@@ -8,6 +8,9 @@
     $website_title = $Lang['page_eu_19-20'];
     require '../blocks/head_pages.php';
     ?>
+
+    <meta property="og:image" content="../../img/og/page_eu_19-20.jpg"/>
+    <meta property="og:description" content="ФГБ: командный чемпионат Европы 2019-2020"/>
 </head>
 <body>
 <div id="fgb_body">

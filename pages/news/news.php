@@ -1,4 +1,4 @@
-<html>
+<html prefix="og: http://ogp.me/ns#">
 <head>
     <link rel="stylesheet/less" href="../../css/tab_page.less">
     <link rel="stylesheet/less" href="../../css/news_pages.less">
@@ -9,6 +9,9 @@
     $website_title = $Lang['page_news'];
     require '../blocks/head_pages.php';
     ?>
+
+    <meta property="og:image" content="../../img/og/page_news.jpg"/>
+    <meta property="og:description" content="ФГБ: новости го в Беларуси"/>
 </head>
 <body>
 <div id="fgb_body">

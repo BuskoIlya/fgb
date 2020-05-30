@@ -1,4 +1,4 @@
-<html>
+<html prefix="og: http://ogp.me/ns#">
 <head>
     <link rel="stylesheet/less" href="../../../css/index.less">
     <?php
@@ -11,6 +11,8 @@
     <script type="text/javascript" src="../../../libs/jssor.slider.min.js"></script>
     <script type="text/javascript" src="../../../js/sliders/index_slider.js"></script>
     <script type="text/javascript" src="0124.js"></script>
+
+    <meta property="og:image" content="../../../img/by/index_slider/2020_01_24_open_13.jpg"/>
 </head>
 <body>
 <div id="fgb_body">

@@ -1,4 +1,4 @@
-<html>
+<html prefix="og: http://ogp.me/ns#">
 <head>
     <link rel="stylesheet/less" href="../../css/tab_page.less">
 
@@ -8,6 +8,9 @@
     $website_title = $Lang['page_eu'];
     require '../blocks/head_pages.php';
     ?>
+
+    <meta property="og:image" content="../../img/og/page_eu.jpg"/>
+    <meta property="og:description" content="ФГБ: результаты чемпионатов Европы"/>
 </head>
 <body>
 <div id="fgb_body">

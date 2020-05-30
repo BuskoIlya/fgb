@@ -1,4 +1,4 @@
-<html>
+<html prefix="og: http://ogp.me/ns#">
 <head>
     <?php
     require '../blocks/set_lang.php';
@@ -6,6 +6,9 @@
     $website_title = $Lang['page_info'];
     require '../blocks/head_pages.php';
     ?>
+
+    <meta property="og:image" content="../../img/og/page_info.jpg"/>
+    <meta property="og:description" content="ФГБ: сайты с информацией об игре го в мире и Беларуси"/>
 </head>
 <body>
 <div id="fgb_body">
