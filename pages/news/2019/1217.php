@@ -4,7 +4,7 @@
     <?php
     require '../../blocks/set_lang.php';
     require_once '../../../php/lang/lang_' . $_SESSION['lang'] . '.php';
-    $website_title = $Lang['page_players'];
+    $website_title = $Lang['page_19-20_4'];
     require '../../blocks/head_news.php';
     ?>
     <script type="text/javascript" src="../../../js/countries.js"></script>

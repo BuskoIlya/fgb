@@ -9,7 +9,7 @@
     <?php
     require '../blocks/set_lang.php';
     require_once '../../php/lang/lang_' . $_SESSION['lang'] . '.php';
-    $website_title = $Lang['page_players'];
+    $website_title = $Lang['page_minsk'];
     require '../blocks/head_pages.php';
     ?>
 </head>
