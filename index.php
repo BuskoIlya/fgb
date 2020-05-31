@@ -20,7 +20,7 @@
             let searchParams = new URLSearchParams(window.location.search)
             let page = searchParams.get('page');
             if (page != null) {
-                window.location = 'http://federationgo.by/' + old_ref_map.get(page);
+                window.location = 'https://federationgo.by/' + old_ref_map.get(page);
             }
         });
     </script>

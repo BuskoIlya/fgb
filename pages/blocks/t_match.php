@@ -64,15 +64,15 @@
         </div>
       </div>
 
-      {{if $video_author}}
+      {{if (video_author != null && video_author != "")}}
       <div class="news_item_css" style="text-align:center; margin-top:20px">
         <p style="font-size: 16px;">Обзор матча</p>
         <p>
         <small class="news_item_author" style="margin:0">
           <span class="glyphicon glyphicon-user" aria-hidden="true"
             style="vertical-align: super"></span>
-          <a href="#" class="color_fill ${author_css}" style="padding-left:5px"
-              onclick="html_in_div('${author_ref}', '#main_id')">
+          <a href="../../../pages/menu/persons.php"
+          class="color_fill ${video_author_type}" style="padding-left:5px">
               ${video_author}
           </a>
         </small>
@@ -83,7 +83,6 @@
           </video>
         </p>
       </div>
-      {{else}}
       {{/if}}
 
     <div class="table-responsive"

@@ -33,7 +33,7 @@
 
 <script>
     $(document).ready(function () {
-        $.get('../../blocks/t_match.html', function (template) {
+        $.get('../../blocks/t_match.php', function (template) {
             $(template).tmpl(m1126).appendTo('#match_id');
         });
     });
