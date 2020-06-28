@@ -7,7 +7,7 @@ $user_password = trim(filter_var($_POST['user_password'], FILTER_SANITIZE_STRING
 
 $error = '';
 if (strlen($login) == 0)
-    $error = $Lang['wrong_email'];
+    $error = $Lang['wrong_login'];
 else if (strlen($user_password) < 6)
     $error = $Lang['wrong_password'];
 
@@ -16,11 +16,6 @@ if ($error != '') {
     $_SESSION['error_text'] = $error;
     exit();
 }
-
-//$hash = "vbycr";
-//$password = md5($password . $hash);
-//WHERE `email` = :email && `password` = :password';
-//['email' => $email, 'password' => $password]
 
 require_once 'fgb_db_connect.php';
 

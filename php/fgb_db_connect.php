@@ -1,18 +1,14 @@
 <?php
-//$user = 'root';//'xn90ad4c_buskoi';//'root';
-//$password = 'root';//'T34@fgb2020';//'root';
-//$db = 'federationgoby';//'xn90ad4c_federationgoby';//'federationgoby';
+//$user = 'root';
+//$password = 'root';
+//$db = 'fgb_2020_06_27';
 //$host = '127.0.0.1';//'93.125.99.130';//'127.0.0.1';
 
-//$user = 'xn90ad4c_buskoi';//'root';
-//$password = 'T34@fgb2020';//'root';
-//$db = 'xn90ad4c_federationgoby';//'federationgoby';
-//$host = '127.0.0.1';//'93.125.99.130';//'127.0.0.1';
+$user = 'xn90ad4c_test';
+$password = 'Venera@21';
+$db = 'xn90ad4c_federationgoby';
+$host = '127.0.0.1';
 
-$user = 'xn90ad4c_test';//'root';
-$password = 'Venera@21';//'root';
-$db = 'xn90ad4c_federationgoby';//'federationgoby';
-$host = '127.0.0.1';//'93.125.99.130';//'127.0.0.1';
 $charset = 'utf8';
 $dsn = 'mysql:host=' . $host . ';port=3306;dbname=' . $db . ';charset=' . $charset;
 try {

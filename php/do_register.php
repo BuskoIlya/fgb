@@ -36,9 +36,6 @@ if ($error != '') {
     exit();
 }
 
-//$hash = "vbycr";
-//$password = md5($password . $hash);
-
 require_once 'fgb_db_connect.php';
 
 $sql = 'INSERT INTO users(login, short_name, full_name, email, 

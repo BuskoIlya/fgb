@@ -25,12 +25,6 @@
                 <p><input class="input_text"
                           type="password" id="user_password" value=""
                           placeholder="<?php echo $Lang['reg_password'] ?>"></p>
-                <!--p class="remember_checkbox">
-                    <label>
-                        <input type="checkbox" name="remember_me">
-                        "<?php echo $Lang['login_remember_me'] ?>"
-                    </label>
-                </p-->
 
                 <p>
                     <div style="text-align: right">
