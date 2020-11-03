@@ -41,6 +41,7 @@ $Lang = array(
     'page_eu_19-20' => 'European Team Championship 2019-2020',
     'page_eu' => 'European Championship Results',
     'page_t20201025' => 'Minsk Cup 2020',
+    'page_t20201030' => 'Autumn Leaf',
 
 
     'menu_main' => 'Main',
