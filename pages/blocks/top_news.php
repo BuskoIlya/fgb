@@ -20,7 +20,7 @@
             ?>
         </div>
 
-        <?php if (!isset($_COOKIE['login']) || $_COOKIE['login'] == ''): ?>
+        <?php /*if (!isset($_COOKIE['login']) || $_COOKIE['login'] == ''): ?>
             <div class="register_block">
                 <a class="color_fill pink" href="../../common/login.php">
                     <?php echo $Lang['log_in'] ?></a>
@@ -34,7 +34,7 @@
                 <a id="exit_btn" class="color_fill gray" href="">
                         <?php echo $Lang['do_exit'] ?></a>
             </div>
-        <?php endif; ?>
+        <?php endif; */?>
 
     </div>
     <div class="banner">
