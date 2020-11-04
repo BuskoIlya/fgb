@@ -36,6 +36,8 @@
                     <ul class="dropdown-menu">
                         <li><a href="../../world/eu_19_20.php">
                                 <?php echo $Lang['menu_command_ech_20192020'] ?></a></li>
+                        <li><a href="../../world/eu_20_21.php">
+                                <?php echo $Lang['menu_command_ech_20202021'] ?></a></li>
                         <li><a href="../../world/europe.php">
                                 <?php echo $Lang['menu_european_chs'] ?></a></li>
                         <li><a href="../../menu/wagc.php">

@@ -39,6 +39,7 @@ $Lang = array(
     'page_t20200404' => 'Veichi Cup',
     'page_t20200703' => 'Friendship Cup',
     'page_eu_19-20' => 'European Team Championship 2019-2020',
+    'page_eu_20-21' => 'European Team Championship 2020-2021',
     'page_eu' => 'European Championship Results',
     'page_t20201025' => 'Minsk Cup 2020',
     'page_t20201030' => 'Autumn Leaf',
@@ -56,6 +57,7 @@ $Lang = array(
     'menu_players_library' => 'Players Library',
     'menu_international_tournaments' => 'World Tournaments',
     'menu_command_ech_20192020' => 'European Command Championship 2019/2020',
+    'menu_command_ech_20202021' => 'European Command Championship 2020/2021',
     'menu_european_chs' => 'European Championships',
     'menu_world_chs' => 'World Championships',
     'menu_study' => 'Study',
@@ -97,6 +99,7 @@ $Lang = array(
     'euc_b' => 'Bronze',
 
     'eu_19_20_title' => 'European Command Go Championship 2019/2020',
+    'eu_20_21_title' => 'European Command Go Championship 2020/2021',
 
     'bottom_fn' => 'Ilya Busko',
     'bottom_comment' => 'The site is filled with educational information and created for  

@@ -1,0 +1,774 @@
+<script>
+    $(document).ready(function () {
+        for (let i = 0; i < eu_20_21_b.length; i++) {
+            eu_20_21_b[i].place = i + 1;
+            $('#eu_20_21_b_template').tmpl(eu_20_21_b[i]).appendTo('#results_b_table_id');
+        }
+        $("#country_b_1").addClass('first_place');
+        $("#country_b_2").addClass('second_place');
+        $("#country_b_9").addClass('prelast_place');
+        $("#country_b_10").addClass('last_place');
+    });
+</script>
+
+<script type='text/x-jquery-tmpl' id='eu_20_21_b_template'>
+  <tr id="country_b_${place}">
+    <td>${place}</td>
+    <td style="text-align:left">
+      <img src=${flag} width="30" height="20px"></img>
+      ${country}
+    </td>
+    <td>${games}</td>
+    <td>${bw}</td>
+    <td>${b1}</td>
+    <td>${b2}</td>
+    <td>${b3}</td>
+    <td>${b4}</td>
+    <td>${w}</td>
+    <td>${d}</td>
+    <td>${l}</td>
+    <td>${score}</td>
+  </tr>
+
+</script>
+
+<div>
+
+    <a href="https://pandanet-igs.com/communities/euroteamchamps/draw/115">Ссылка на сайт группы</a>
+
+    <div class="table-responsive fgb_table"
+         style="text-align:center;margin: 20px 0;">
+      <table class="table table-striped table-hover table-bordered">
+        <thead>
+        <tr class="active">
+          <th style="text-align:center">Место</th>
+          <th style="text-align:center">Страна</th>
+          <th style="text-align:center">Игры</th>
+          <th style="text-align:center" title="Выигранных партий">ВП</th>
+          <th style="text-align:center" title="Доска номер 1">Д. 1</th>
+          <th style="text-align:center" title="Доска номер 2">Д. 2</th>
+          <th style="text-align:center" title="Доска номер 3">Д. 3</th>
+          <th style="text-align:center" title="Доска номер 4">Д. 4</th>
+          <th style="text-align:center" title="Выигрыш">В.</th>
+          <th style="text-align:center" title="Ничья">Н.</th>
+          <th style="text-align:center" title="Поражение">П.</th>
+          <th style="text-align:center">Очки</th>
+        </tr>
+        </thead>
+        <tbody id="results_b_table_id">
+        </tbody>
+      </table>
+    </div>
+
+    <div class="table-responsive fgb_table"
+         style="text-align:center;margin:0 auto;width: 60%">
+      <table class="table table-striped table-hover table-bordered">
+        <caption style="text-align: center; font-size: 15px">
+          <span><strong>Тур 1</strong></span>
+        </caption>
+        <thead>
+        <tr class="active">
+          <th style="text-align:center">Команда 1</th>
+          <th style="text-align:center">Команда 2</th>
+          <th style="text-align:center">Дата</th>
+          <th style="text-align:center">Счёт</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+          <td style="text-align:left">
+            <img src="../../img/flags/mini/it.png" width="30" height="20px"></img>
+            Италия
+          </td>
+          <td style="text-align:left">
+            <img src="../../img/flags/mini/se.png" width="30" height="20px"></img>
+            Швеция
+          </td>
+          <td>2020.10.20</td>
+          <td>2&minus;2</td>
+        </tr>
+        <tr>
+          <td style="text-align:left">
+            <img src="../../img/flags/mini/de.png" width="30" height="20px"></img>
+            Германия
+          </td>
+          <td style="text-align:left">
+            <img src="../../img/flags/mini/hr.png" width="30" height="20px"></img>
+            Хорватия
+          </td>
+          <td>2020.10.20</td>
+          <td>4&minus;0</td>
+        </tr>
+        <tr>
+          <td style="text-align:left">
+            <img src="../../img/flags/mini/fi.png" width="30" height="20px"></img>
+            Финляндия
+          </td>
+          <td style="text-align:left">
+            <img src="../../img/flags/mini/nl.png" width="30" height="20px"></img>
+            Нидерланды
+          </td>
+          <td>2020.10.20</td>
+          <td>3&minus;1</td>
+        </tr>
+        <tr>
+          <td style="text-align:left">
+            <img src="../../img/flags/mini/tr.png" width="30" height="20px"></img>
+            Турция
+          </td>
+          <td style="text-align:left">
+            <img src="../../img/flags/mini/ch.png" width="30" height="20px"></img>
+            Швейцария
+          </td>
+          <td>2020.10.20</td>
+          <td>2&minus;2</td>
+        </tr>
+        <tr>
+          <td style="text-align:left">
+            <img src="../../img/flags/mini/be.png" width="30" height="20px"></img>
+            Бельгия
+          </td>
+          <td style="text-align:left">
+            <img src="../../img/flags/mini/gb.png" width="30" height="20px"></img>
+            Великобритания
+          </td>
+          <td>2020.10.20</td>
+          <td>1&minus;3</td>
+        </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="table-responsive fgb_table"
+         style="text-align:center;margin:0 auto;width: 60%">
+      <table class="table table-striped table-hover table-bordered">
+        <caption style="text-align: center; font-size: 15px">
+          <span><strong>Тур 2</strong></span>
+        </caption>
+        <thead>
+        <tr class="active">
+          <th style="text-align:center">Команда 1</th>
+          <th style="text-align:center">Команда 2</th>
+          <th style="text-align:center">Дата</th>
+          <th style="text-align:center">Счёт</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+          <td style="text-align:left">
+            <img src="../../img/flags/mini/se.png" width="30" height="20px"></img>
+            Швеция
+          </td>
+          <td style="text-align:left">
+            <img src="../../img/flags/mini/gb.png" width="30" height="20px"></img>
+            Великобритания
+          </td>
+          <td>2020.11.17</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td style="text-align:left">
+            <img src="../../img/flags/mini/ch.png" width="30" height="20px"></img>
+            Швейцария
+          </td>
+          <td style="text-align:left">
+            <img src="../../img/flags/mini/be.png" width="30" height="20px"></img>
+            Бельгия
+          </td>
+          <td>2020.11.17</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td style="text-align:left">
+            <img src="../../img/flags/mini/nl.png" width="30" height="20px"></img>
+            Нидерланды
+          </td>
+          <td style="text-align:left">
+            <img src="../../img/flags/mini/tr.png" width="30" height="20px"></img>
+            Турция
+          </td>
+          <td>2020.11.17</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td style="text-align:left">
+            <img src="../../img/flags/mini/hr.png" width="30" height="20px"></img>
+            Хорватия
+          </td>
+          <td style="text-align:left">
+            <img src="../../img/flags/mini/fi.png" width="30" height="20px"></img>
+            Финляндия
+          </td>
+          <td>2020.11.17</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td style="text-align:left">
+            <img src="../../img/flags/mini/it.png" width="30" height="20px"></img>
+            Италия
+          </td>
+          <td style="text-align:left">
+            <img src="../../img/flags/mini/de.png" width="30" height="20px"></img>
+            Германия
+          </td>
+          <td>2020.11.17</td>
+          <td></td>
+        </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="table-responsive fgb_table"
+         style="text-align:center;margin:0 auto;width: 60%">
+      <table class="table table-striped table-hover table-bordered">
+        <caption style="text-align: center; font-size: 15px">
+          <span><strong>Тур 3</strong></span>
+        </caption>
+        <thead>
+        <tr class="active">
+          <th style="text-align:center">Команда 1</th>
+          <th style="text-align:center">Команда 2</th>
+          <th style="text-align:center">Дата</th>
+          <th style="text-align:center">Счёт</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+          <td style="text-align:left">
+            <img src="../../img/flags/mini/de.png" width="30" height="20px"></img>
+            Германия
+          </td>
+          <td style="text-align:left">
+            <img src="../../img/flags/mini/se.png" width="30" height="20px"></img>
+            Швеция
+          </td>
+          <td>2020.12.08</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td style="text-align:left">
+            <img src="../../img/flags/mini/fi.png" width="30" height="20px"></img>
+            Финляндия
+          </td>
+          <td style="text-align:left">
+            <img src="../../img/flags/mini/it.png" width="30" height="20px"></img>
+            Италия
+          </td>
+          <td>2020.12.08</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td style="text-align:left">
+            <img src="../../img/flags/mini/tr.png" width="30" height="20px"></img>
+            Турция
+          </td>
+          <td style="text-align:left">
+            <img src="../../img/flags/mini/hr.png" width="30" height="20px"></img>
+            Хорватия
+          </td>
+          <td>2020.12.08</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td style="text-align:left">
+            <img src="../../img/flags/mini/be.png" width="30" height="20px"></img>
+            Бельгия
+          </td>
+          <td style="text-align:left">
+            <img src="../../img/flags/mini/nl.png" width="30" height="20px"></img>
+            Нидерланды
+          </td>
+          <td>2020.12.08</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td style="text-align:left">
+            <img src="../../img/flags/mini/gb.png" width="30" height="20px"></img>
+            Великобритания
+          </td>
+          <td style="text-align:left">
+            <img src="../../img/flags/mini/ch.png" width="30" height="20px"></img>
+            Швейцария
+          </td>
+          <td>2020.12.08</td>
+          <td></td>
+        </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="table-responsive fgb_table"
+         style="text-align:center;margin:0 auto;width: 60%">
+      <table class="table table-striped table-hover table-bordered">
+        <caption style="text-align: center; font-size: 15px">
+          <span><strong>Тур 4</strong></span>
+        </caption>
+        <thead>
+        <tr class="active">
+          <th style="text-align:center">Команда 1</th>
+          <th style="text-align:center">Команда 2</th>
+          <th style="text-align:center">Дата</th>
+          <th style="text-align:center">Счёт</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+          <td style="text-align:left">
+            <img src="../../img/flags/mini/se.png" width="30" height="20px"></img>
+            Швеция
+          </td>
+          <td style="text-align:left">
+            <img src="../../img/flags/mini/ch.png" width="30" height="20px"></img>
+            Швейцария
+          </td>
+          <td>2021.01.19</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td style="text-align:left">
+            <img src="../../img/flags/mini/nl.png" width="30" height="20px"></img>
+            Нидерланды
+          </td>
+          <td style="text-align:left">
+            <img src="../../img/flags/mini/gb.png" width="30" height="20px"></img>
+            Великобритания
+          </td>
+          <td>2021.01.19</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td style="text-align:left">
+            <img src="../../img/flags/mini/hr.png" width="30" height="20px"></img>
+            Хорватия
+          </td>
+          <td style="text-align:left">
+            <img src="../../img/flags/mini/be.png" width="30" height="20px"></img>
+            Бельгия
+          </td>
+          <td>2021.01.19</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td style="text-align:left">
+            <img src="../../img/flags/mini/it.png" width="30" height="20px"></img>
+            Италия
+          </td>
+          <td style="text-align:left">
+            <img src="../../img/flags/mini/tr.png" width="30" height="20px"></img>
+            Турция
+          </td>
+          <td>2021.01.19</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td style="text-align:left">
+            <img src="../../img/flags/mini/de.png" width="30" height="20px"></img>
+            Германия
+          </td>
+          <td style="text-align:left">
+            <img src="../../img/flags/mini/fi.png" width="30" height="20px"></img>
+            Финляндия
+          </td>
+          <td>2021.01.19</td>
+          <td></td>
+        </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="table-responsive fgb_table"
+         style="text-align:center;margin:0 auto;width: 60%">
+      <table class="table table-striped table-hover table-bordered">
+        <caption style="text-align: center; font-size: 15px">
+          <span><strong>Тур 5</strong></span>
+        </caption>
+        <thead>
+        <tr class="active">
+          <th style="text-align:center">Команда 1</th>
+          <th style="text-align:center">Команда 2</th>
+          <th style="text-align:center">Дата</th>
+          <th style="text-align:center">Счёт</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+          <td style="text-align:left">
+            <img src="../../img/flags/mini/fi.png" width="30" height="20px"></img>
+            Финляндия
+          </td>
+          <td style="text-align:left">
+            <img src="../../img/flags/mini/se.png" width="30" height="20px"></img>
+            Швеция
+          </td>
+          <td>2021.02.09</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td style="text-align:left">
+            <img src="../../img/flags/mini/tr.png" width="30" height="20px"></img>
+            Турция
+          </td>
+          <td style="text-align:left">
+            <img src="../../img/flags/mini/de.png" width="30" height="20px"></img>
+            Германия
+          </td>
+          <td>2021.02.09</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td style="text-align:left">
+            <img src="../../img/flags/mini/be.png" width="30" height="20px"></img>
+            Бельгия
+          </td>
+          <td style="text-align:left">
+            <img src="../../img/flags/mini/it.png" width="30" height="20px"></img>
+            Италия
+          </td>
+          <td>2021.02.09</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td style="text-align:left">
+            <img src="../../img/flags/mini/gb.png" width="30" height="20px"></img>
+            Великобритания
+          </td>
+          <td style="text-align:left">
+            <img src="../../img/flags/mini/hr.png" width="30" height="20px"></img>
+            Хорватия
+          </td>
+          <td>2021.02.09</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td style="text-align:left">
+            <img src="../../img/flags/mini/ch.png" width="30" height="20px"></img>
+            Швейцария
+          </td>
+          <td style="text-align:left">
+            <img src="../../img/flags/mini/nl.png" width="30" height="20px"></img>
+            Нидерланды
+          </td>
+          <td>2021.02.09</td>
+          <td></td>
+        </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="table-responsive fgb_table"
+         style="text-align:center;margin:0 auto;width: 60%">
+      <table class="table table-striped table-hover table-bordered">
+        <caption style="text-align: center; font-size: 15px">
+          <span><strong>Тур 6</strong></span>
+        </caption>
+        <thead>
+        <tr class="active">
+          <th style="text-align:center">Команда 1</th>
+          <th style="text-align:center">Команда 2</th>
+          <th style="text-align:center">Дата</th>
+          <th style="text-align:center">Счёт</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+          <td style="text-align:left">
+            <img src="../../img/flags/mini/se.png" width="30" height="20px"></img>
+            Швеция
+          </td>
+          <td style="text-align:left">
+            <img src="../../img/flags/mini/nl.png" width="30" height="20px"></img>
+            Нидерланды
+          </td>
+          <td>2021.03.09</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td style="text-align:left">
+            <img src="../../img/flags/mini/hr.png" width="30" height="20px"></img>
+            Хорватия
+          </td>
+          <td style="text-align:left">
+            <img src="../../img/flags/mini/ch.png" width="30" height="20px"></img>
+            Швейцария
+          </td>
+          <td>2021.03.09</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td style="text-align:left">
+            <img src="../../img/flags/mini/it.png" width="30" height="20px"></img>
+            Италия
+          </td>
+          <td style="text-align:left">
+            <img src="../../img/flags/mini/gb.png" width="30" height="20px"></img>
+            Великобритания
+          </td>
+          <td>2021.03.09</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td style="text-align:left">
+            <img src="../../img/flags/mini/de.png" width="30" height="20px"></img>
+            Германия
+          </td>
+          <td style="text-align:left">
+            <img src="../../img/flags/mini/be.png" width="30" height="20px"></img>
+            Бельгия
+          </td>
+          <td>2021.03.09</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td style="text-align:left">
+            <img src="../../img/flags/mini/fi.png" width="30" height="20px"></img>
+            Финляндия
+          </td>
+          <td style="text-align:left">
+            <img src="../../img/flags/mini/tr.png" width="30" height="20px"></img>
+            Турция
+          </td>
+          <td>2021.03.09</td>
+          <td></td>
+        </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="table-responsive fgb_table"
+         style="text-align:center;margin:0 auto;width: 60%">
+      <table class="table table-striped table-hover table-bordered">
+        <caption style="text-align: center; font-size: 15px">
+          <span><strong>Тур 7</strong></span>
+        </caption>
+        <thead>
+        <tr class="active">
+          <th style="text-align:center">Команда 1</th>
+          <th style="text-align:center">Команда 2</th>
+          <th style="text-align:center">Дата</th>
+          <th style="text-align:center">Счёт</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+          <td style="text-align:left">
+            <img src="../../img/flags/mini/tr.png" width="30" height="20px"></img>
+            Турция
+          </td>
+          <td style="text-align:left">
+            <img src="../../img/flags/mini/se.png" width="30" height="20px"></img>
+            Швеция
+          </td>
+          <td>2021.04.13</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td style="text-align:left">
+            <img src="../../img/flags/mini/be.png" width="30" height="20px"></img>
+            Бельгия
+          </td>
+          <td style="text-align:left">
+            <img src="../../img/flags/mini/fi.png" width="30" height="20px"></img>
+            Финляндия
+          </td>
+          <td>2021.04.13</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td style="text-align:left">
+            <img src="../../img/flags/mini/gb.png" width="30" height="20px"></img>
+            Великобритания
+          </td>
+          <td style="text-align:left">
+            <img src="../../img/flags/mini/de.png" width="30" height="20px"></img>
+            Германия
+          </td>
+          <td>2021.04.13</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td style="text-align:left">
+            <img src="../../img/flags/mini/ch.png" width="30" height="20px"></img>
+            Швейцария
+          </td>
+          <td style="text-align:left">
+            <img src="../../img/flags/mini/it.png" width="30" height="20px"></img>
+            Италия
+          </td>
+          <td>2021.04.13</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td style="text-align:left">
+            <img src="../../img/flags/mini/nl.png" width="30" height="20px"></img>
+            Нидерланды
+          </td>
+          <td style="text-align:left">
+            <img src="../../img/flags/mini/hr.png" width="30" height="20px"></img>
+            Хорватия
+          </td>
+          <td>2021.04.13</td>
+          <td></td>
+        </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="table-responsive fgb_table"
+         style="text-align:center;margin:0 auto;width: 60%">
+      <table class="table table-striped table-hover table-bordered">
+        <caption style="text-align: center; font-size: 15px">
+          <span><strong>Тур 8</strong></span>
+        </caption>
+        <thead>
+        <tr class="active">
+          <th style="text-align:center">Команда 1</th>
+          <th style="text-align:center">Команда 2</th>
+          <th style="text-align:center">Дата</th>
+          <th style="text-align:center">Счёт</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+          <td style="text-align:left">
+            <img src="../../img/flags/mini/se.png" width="30" height="20px"></img>
+            Швеция
+          </td>
+          <td style="text-align:left">
+            <img src="../../img/flags/mini/hr.png" width="30" height="20px"></img>
+            Хорватия
+          </td>
+          <td>2021.05.08</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td style="text-align:left">
+            <img src="../../img/flags/mini/it.png" width="30" height="20px"></img>
+            Италия
+          </td>
+          <td style="text-align:left">
+            <img src="../../img/flags/mini/nl.png" width="30" height="20px"></img>
+            Нидерланды
+          </td>
+          <td>2021.05.08</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td style="text-align:left">
+            <img src="../../img/flags/mini/de.png" width="30" height="20px"></img>
+            Германия
+          </td>
+          <td style="text-align:left">
+            <img src="../../img/flags/mini/ch.png" width="30" height="20px"></img>
+            Швейцария
+          </td>
+          <td>2021.05.08</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td style="text-align:left">
+            <img src="../../img/flags/mini/fi.png" width="30" height="20px"></img>
+            Финляндия
+          </td>
+          <td style="text-align:left">
+            <img src="../../img/flags/mini/gb.png" width="30" height="20px"></img>
+            Великобритания
+          </td>
+          <td>2021.05.08</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td style="text-align:left">
+            <img src="../../img/flags/mini/tr.png" width="30" height="20px"></img>
+            Турция
+          </td>
+          <td style="text-align:left">
+            <img src="../../img/flags/mini/be.png" width="30" height="20px"></img>
+            Бельгия
+          </td>
+          <td>2021.05.08</td>
+          <td></td>
+        </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="table-responsive fgb_table"
+         style="text-align:center;margin:0 auto;width: 60%">
+      <table class="table table-striped table-hover table-bordered">
+        <caption style="text-align: center; font-size: 15px">
+          <span><strong>Тур 9</strong></span>
+        </caption>
+        <thead>
+        <tr class="active">
+          <th style="text-align:center">Команда 1</th>
+          <th style="text-align:center">Команда 2</th>
+          <th style="text-align:center">Дата</th>
+          <th style="text-align:center">Счёт</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+          <td style="text-align:left">
+            <img src="../../img/flags/mini/be.png" width="30" height="20px"></img>
+            Бельгия
+          </td>
+          <td style="text-align:left">
+            <img src="../../img/flags/mini/se.png" width="30" height="20px"></img>
+            Швеция
+          </td>
+          <td>2021.05.25</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td style="text-align:left">
+            <img src="../../img/flags/mini/gb.png" width="30" height="20px"></img>
+            Великобритания
+          </td>
+          <td style="text-align:left">
+            <img src="../../img/flags/mini/tr.png" width="30" height="20px"></img>
+            Турция
+          </td>
+          <td>2021.05.25</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td style="text-align:left">
+            <img src="../../img/flags/mini/ch.png" width="30" height="20px"></img>
+            Швейцария
+          </td>
+          <td style="text-align:left">
+            <img src="../../img/flags/mini/fi.png" width="30" height="20px"></img>
+            Финляндия
+          </td>
+          <td>2021.05.25</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td style="text-align:left">
+            <img src="../../img/flags/mini/nl.png" width="30" height="20px"></img>
+            Нидерланды
+          </td>
+          <td style="text-align:left">
+            <img src="../../img/flags/mini/de.png" width="30" height="20px"></img>
+            Германия
+          </td>
+          <td>2021.05.25</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td style="text-align:left">
+            <img src="../../img/flags/mini/hr.png" width="30" height="20px"></img>
+            Хорватия
+          </td>
+          <td style="text-align:left">
+            <img src="../../img/flags/mini/it.png" width="30" height="20px"></img>
+            Италия
+          </td>
+          <td>2021.05.25</td>
+          <td></td>
+        </tr>
+        </tbody>
+      </table>
+    </div>
+
+</div>
