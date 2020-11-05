@@ -67,6 +67,9 @@ $Lang = array(
     'menu_belarus' => 'Belarus',
     'menu_minsk' => 'Minsk',
 
+    'menu_welcome_to_go' => 'Getting to Know Game Go',
+    'menu_courses' => 'Training courses',
+
     'page_players' => 'Score list of Belarus players',
     'pp_title' => 'Players',
     'pp_egd_comment' => '*Players information corresponds to data from the European player Go data base.',

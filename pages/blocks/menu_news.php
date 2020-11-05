@@ -57,6 +57,15 @@
                         <li><a href="../../gomanual/go_manual.php">
                                 <?php echo $Lang['menu_manual'] ?></a>
                         </li>
+                        <li class="dropdown-submenu">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                <?php echo $Lang['menu_courses'] ?></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="../../menu/welcome_to_go.php">
+                                        <?php echo $Lang['menu_welcome_to_go'] ?></a>
+                                </li>
+                            </ul>
+                        </li>
                         <!--li><a href="?page=go-books">Литература</a></li-->
                     </ul>
                 </li>

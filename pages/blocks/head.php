@@ -17,6 +17,7 @@
 <link rel="stylesheet/less" href="css/colors.less">
 <link rel="stylesheet/less" href="css/blocks.less">
 <link rel="stylesheet/less" href="css/common_elements.less">
+<link rel="stylesheet/less" href="css/menu.less">
 <!--// -------------------------------------
 // Библиотечные скрипты
 // --------------------------------------->
