@@ -67,7 +67,7 @@ var m0526 = {
     'm2_flag_w': '../../../' + Country.flag_georgia_m,
     'm3': '0526-3F.sgf',
     'm3_w': '0526-3.sgf',
-    'm3_name_b': '',
+    'm3_name_b': 'Andro Nikolaishvili',
     'm3_name_w': 'Герасютин Никита Эдуардович',
     'm3_photo_b': '../../../img/persons/georgia/nikolaishvili.jpg',
     'm3_photo_w': '../../../img/users/0002.jpg',
