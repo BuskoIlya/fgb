@@ -69,6 +69,8 @@ $Lang = array(
 
     'menu_welcome_to_go' => 'Знакомство с игрой Го',
     'menu_courses' => 'Обучающие курсы',
+    'menu_books' => 'Книги по Го',
+    'mb_title' => 'Книги по Го',
 
     'page_players' => 'Рейтинг лист игроков Беларуси',
     'pp_title' => 'Игроки',

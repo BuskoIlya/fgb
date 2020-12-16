@@ -1,0 +1,81 @@
+@import "constants.less";
+@import "common_elements";
+// ----------------------------------------------
+// Оформление панели в странице "Книги по Го"
+// ----------------------------------------------
+.book_part {
+  padding: 2px 20px;
+
+  h1 {
+    font-size: @fs_page_title !important;
+  }
+
+  p {
+    line-height: 2;
+  }
+}
+
+// ----------------------------------------------
+// Оформление карточки "Книги"
+// ----------------------------------------------
+.book_card_css {
+
+  padding: 15px;
+  text-align: center;
+  height: 350px;
+  -webkit-transition: all .3s linear;
+  transition: all .3s linear;
+  position: relative;
+  cursor: default;
+  border-radius: 2px;
+  border: @inner_block_border;
+  margin: 0;
+  font-size: @fs_menu_panel_title;
+
+  &:hover {
+    box-shadow: @box_shadow_block;
+  }
+
+  p {
+    margin: 0;
+    padding: 0;
+    line-height: 2;
+  }
+
+  .photo {
+    width: 160px;
+    height: 200px;
+    margin-bottom: 10px;
+    border-radius: 2px;
+  }
+}
+
+// ----------------------------------------------
+// Оформление страницы "Книги"
+// ----------------------------------------------
+.book_page {
+
+  padding: 15px;
+  text-align: center;
+  -webkit-transition: all .3s linear;
+  transition: all .3s linear;
+  position: relative;
+  cursor: default;
+
+  margin: 0;
+  font-size: @fs_menu_panel_title;
+
+  p {
+    margin: 0;
+    padding: 0;
+    line-height: 2;
+  }
+
+  .photo {
+    width: 225px;
+    height: 320px;
+    margin-bottom: 10px;
+    border-radius: 2px;
+    border: @inner_block_border;
+  }
+}

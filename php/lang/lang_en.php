@@ -70,6 +70,8 @@ $Lang = array(
 
     'menu_welcome_to_go' => 'Getting to Know Game Go',
     'menu_courses' => 'Training courses',
+    'menu_books' => 'Go Books',
+    'mb_title' => 'Go Books',
 
     'page_players' => 'Score list of Belarus players',
     'pp_title' => 'Players',

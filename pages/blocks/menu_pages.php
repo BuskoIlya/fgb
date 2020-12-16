@@ -66,7 +66,10 @@
                                 </li>
                             </ul>
                         </li>
-                        <!--li><a href="?page=go-books">Литература</a></li-->
+
+                        <li><a href="../menu/books.php">
+                                <?php echo $Lang['menu_books'] ?></a>
+                        </li>
                     </ul>
                 </li>
                 <li class="dropdown">

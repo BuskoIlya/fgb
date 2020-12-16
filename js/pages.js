@@ -13,3 +13,15 @@ var eu_20_21_d = [];
 var news_2020 = [];
 var news_2019 = [];
 var news_2018 = [];
+
+var books_all = [];
+var current_book;
+
+class Book {
+    constructor(name, author, ref, img) {
+        this.name = name;
+        this.author = author;
+        this.ref = ref;
+        this.img = img;
+    }
+}
