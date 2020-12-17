@@ -1,0 +1,25 @@
+(;CA[windows-1251]LT[]RR[Normal]GM[1]NW[28]AP[MultiGo:4.4.4]SZ[19]NB[28]GN[nem-zerga(B) IGS]
+EV[Internet Go Server game\: nem vs zerga]DT[2020-12-16]PC[IGS\:  igs.joyjoy.net 6969]
+PB[zerga]BR[1k ]PW[nem]WR[1k?]KM[6.5]TM[3600]RE[B+Resign]US[Brought to you by IGS PANDANET]
+CP[
+  Copyright (c) PANDANET Inc. 2020
+  Permission to reproduce this game is given, provided proper credit is given.
+  No warrantee, implied or explicit, is understood.
+  Use of this game is an understanding and agreement of this notice.
+]
+MULTIGOGM[1]
+;B[pd]BL[3576];W[dp]WL[3589];B[pq]BL[3568];W[dc]WL[3582];B[fq]BL[3566];W[po]WL[3564]
+;B[pm]BL[3539];W[qq]WL[3535];B[pp]BL[3283];W[qp]WL[3526];B[oo]BL[3281];W[pn]WL[3408]
+;B[on]BL[3200];W[qm]WL[3404];B[ql]BL[3131];W[op]WL[3388];B[oq]BL[3125];W[np]WL[3385]
+;B[rm]BL[3032];W[om]WL[3351];B[qn]BL[2938];W[qo]WL[3346];B[mo]BL[2872];W[nq]WL[3315]
+;B[nm]BL[2831];W[kq]WL[3178];B[de]BL[2821];W[dh]WL[3131];B[cn]BL[2794];W[fp]WL[2907]
+;B[gp]BL[2735];W[fo]WL[2899];B[eq]BL[2637];W[dq]WL[2887];B[go]BL[2612];W[co]WL[2864]
+;B[fn]BL[2566];W[en]WL[2733];B[em]BL[2523];W[hq]WL[2670];B[gq]BL[2500];W[fm]WL[2647]
+;B[gn]BL[2470];W[dm]WL[2639];B[dn]BL[2318];W[eo]WL[2579];B[el]BL[2269];W[cm]WL[2535]
+;B[bn]BL[2199];W[do]WL[2403];B[bm]BL[2186];W[fl]WL[2310];B[cl]BL[2153];W[hl]WL[2304]
+;B[jn]BL[2122];W[ko]WL[2256];B[kn]BL[2111];W[ln]WL[2224];B[lo]BL[2102];W[lm]WL[2212]
+;B[kp]BL[2095];W[jo]WL[2209];B[jp]BL[2092];W[io]WL[2207];B[ip]BL[2067];W[in]WL[2197]
+;B[jm]BL[2061];W[im]WL[2153];B[lq]BL[1941];W[jl]WL[2069];B[bp]BL[1891];W[bq]WL[2055]
+;B[dr]BL[1802];W[cr]WL[2047];B[er]BL[1799];W[hp]WL[2017];B[ho]BL[1764];W[iq]WL[2008]
+;B[jq]BL[1758];W[gr]WL[2000];B[ir]BL[1728];W[hr]WL[1997];B[jr]BL[1725];W[fs]WL[1988]
+;B[fr]BL[1701])
