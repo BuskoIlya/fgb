@@ -1,0 +1,32 @@
+<script>
+    $(document).ready(function () {
+        var data = {
+            'date': '20.11.2020',
+            'address': 'г. Минск, МДДМ, Старовиленский тракт 41.',
+            'place_img': '../../../img/icons/city_minsk.jpg',
+            'www_ref': '',
+            'city': '(Минск, Беларусь)',
+            'author': 'Грунковский Юрий',
+            'photos': ["../../../img/by/news/2020/1120-01.jpg", "../../../img/by/news/2020/1120-02.jpg",
+                "../../../img/by/news/2020/1120-03.jpg", "../../../img/by/news/2020/1120-04.jpg",
+                "../../../img/by/news/2020/1120-05.jpg"],
+        };
+
+        $.get('../../blocks/t_news_top.html', function (template) {
+            $(template).tmpl(data).appendTo('#news_top_id');
+        });
+
+        current_slider_photos.splice(0);
+        current_slider_photos = data.photos;
+        current_slider_photo_titles.splice(0);
+        $("#slider_id").load("../../blocks/t_index_slider.html");
+    });
+</script>
+
+<div class="inner_page">
+    <div class="data_panel">
+        <h1>Семейный турнир</h1>
+        <div id="news_top_id"></div>
+        <div id="slider_id" style="padding-bottom: 20px"></div>
+    </div>
+</div>

@@ -46,6 +46,7 @@ $Lang = array(
     'page_20-21_1' => 'Belarus - Georgia. 1 round 2020-2021',
     'page_20-21_2' => 'Morocco - Belarus. 2 round 2020-2021',
     'page_20-21_3' => 'Belarus - Bulgaria. 3 round 2020-2021',
+    'page_t20201120' => 'Family Cup',
 
     'menu_main' => 'Main',
     'menu_info' => 'Information',

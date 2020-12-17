@@ -58,6 +58,7 @@ require_once 'php/lang/lang_index_' . $_SESSION['lang'] . '.php';
             "<?php echo $Lang_index['2020_01_24'] ?>",
             "<?php echo $Lang_index['2020_10_25'] ?>",
             "<?php echo $Lang_index['2020_10_30'] ?>",
+            "<?php echo $Lang_index['2020_11_20'] ?>",
         ];
     }
 
@@ -74,6 +75,7 @@ require_once 'php/lang/lang_index_' . $_SESSION['lang'] . '.php';
             "img/by/index_slider/2020_01_24_open_13.jpg",
             "img/by/index_slider/2020_10_25_minsk.jpg",
             "img/by/index_slider/2020_10_30_autumn.jpg",
+            "img/by/index_slider/2020_11_20_family.jpg",
         ];
     }
 
