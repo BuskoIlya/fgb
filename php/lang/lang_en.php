@@ -48,6 +48,7 @@ $Lang = array(
     'page_20-21_3' => 'Belarus - Bulgaria. 3 round 2020-2021',
     'page_t20201120' => 'Family Cup',
     'page_t20201205' => 'Belarus Championship 2020',
+    'page_t20201222' => '10th Christmas Tournament',
 
     'menu_main' => 'Main',
     'menu_info' => 'Information',

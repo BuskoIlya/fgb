@@ -1,0 +1,173 @@
+<script>
+    $(document).ready(function () {
+        var data = {
+            'date': '18,22.12.2020',
+            'address': 'г. Минск, МДДМ, Старовиленский тракт 41',
+            'place_img': '../../../img/icons/city_minsk.jpg',
+            'www_ref': '',
+            'city': '(Минск, Беларусь)',
+            'author': 'Грунковский Юрий',
+            'photos': ["../../../img/by/news/2020/1222-1.jpg", "../../../img/by/news/2020/1222-2.jpg",
+                "../../../img/by/news/2020/1222-3.jpg", "../../../img/by/news/2020/1222-4.jpg",
+                "../../../img/by/news/2020/1222-5.jpg",],
+        };
+
+        $.get('../../blocks/t_news_top.html', function (template) {
+            $(template).tmpl(data).appendTo('#news_top_id');
+        });
+
+        current_slider_photos.splice(0);
+        current_slider_photos = data.photos;
+        current_slider_photo_titles.splice(0);
+        $("#slider_id").load("../../blocks/t_index_slider.html");
+
+        for (let i = 0; i < r12221.length; i++) {
+            $('#t_12221').tmpl(r12221[i]).appendTo('#results_table_id1');
+        }
+        decorate_tournament('#results_table_id1', [5, 6, 7, 8, 9]);
+
+        for (let i = 0; i < r12222.length; i++) {
+            $('#t_12222').tmpl(r12222[i]).appendTo('#results_table_id2');
+        }
+        decorate_tournament('#results_table_id2', [5, 6, 7, 8]);
+    });
+</script>
+
+<div class="inner_page">
+    <div class="data_panel">
+        <h1>10-ый рождественский турнир</h1>
+        <div id="news_top_id"></div>
+        <div id="slider_id" style="padding-bottom: 20px"></div>
+        <div style="margin-bottom: 20px">
+            <div class="table-responsive fgb_table">
+                <table class="table table-striped table-hover table-bordered">
+                    <caption style="color: #333;
+        text-align: center; font-size: 15px">
+                        <span><strong>Дети</strong></span>
+                    </caption>
+                    <thead>
+                    <tr class="active">
+                        <th>Место</th>
+                        <th>Игрок</th>
+                        <th>Город</th>
+                        <th>Ранг</th>
+                        <th>Рейтинг</th>
+                        <th>1</th>
+                        <th>2</th>
+                        <th>3</th>
+                        <th>4</th>
+                        <th>5</th>
+                        <th>Очки</th>
+                        <th>SOS</th>
+                        <th>SDOS</th>
+                    </tr>
+                    </thead>
+                    <tbody id="results_table_id1">
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div style="margin-bottom: 20px">
+            <div class="table-responsive fgb_table">
+                <table class="table table-striped table-hover table-bordered">
+                    <caption style="color: #333;
+        text-align: center; font-size: 15px">
+                        <span><strong>Взрослые</strong></span>
+                    </caption>
+                    <thead>
+                    <tr class="active">
+                        <th>Место</th>
+                        <th>Игрок</th>
+                        <th>Город</th>
+                        <th>Ранг</th>
+                        <th>Рейтинг</th>
+                        <th>1</th>
+                        <th>2</th>
+                        <th>3</th>
+                        <th>4</th>
+                        <th>Очки</th>
+                        <th>SOS</th>
+                        <th>SDOS</th>
+                    </tr>
+                    </thead>
+                    <tbody id="results_table_id2">
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <div style="width: 685px;text-align: justify;margin: 0 auto">
+            <p>
+                &emsp;&emsp;Фестиваль включает два форовых турнира: на досках 13х13 и 19х19, конкурсы и викторины.
+                Каждому участнику будет сувенирная закладка с джосэками Го и сладкий приз. А трем лучшим игрокам в каждой лиге большие кубки и медали.
+                Взнос 15р в кассу дворца.
+            </p>
+
+            <p>
+                &emsp;&emsp;<i style="text-decoration: underline">Подробное расписание детского турнира:</i><br>
+                &emsp;&emsp;1 день, пятница 18.12<br>
+                &emsp;&emsp;Сбор и регистрация на турнир на досках 13х13: 17.00-17.15<br>
+                &emsp;&emsp;Новогодние загадки 17.15-17.30<br>
+                &emsp;&emsp;1 тур 13х13: 17.30-18.00<br>
+                &emsp;&emsp;2 тур 13х13: 18.00-18.30<br>
+                &emsp;&emsp;3 тур 13х13: 18.30-19.00<br>
+                &emsp;&emsp;Сбор и регистрация на турнир на досках 19х19: 19.00-19.15<br>
+                &emsp;&emsp;1 тур 19х19: 19.15-20.30<br>
+                &emsp;&emsp;2 тур 19х19: 20.30-21.30<br>
+            </p>
+
+            <p>
+                &emsp;&emsp;<i style="text-decoration: underline">2 день, вторник 22.12</i><br>
+                &emsp;&emsp;Конкурсы и викторины 18.00-18.30<br>
+                &emsp;&emsp;4 тур 13х13: 18.30-19.00<br>
+                &emsp;&emsp;5 тур 13х13: 19.00-19.30<br>
+                &emsp;&emsp;Награждение участников турнира 13х13: около 19.30<br>
+                &emsp;&emsp;3 тур 19х19: 19.30-20.30<br>
+                &emsp;&emsp;4 тур 19х19: 20.30-21.30<br>
+                &emsp;&emsp;Награждение участников турнира 19х19: около 21.30<br>
+            </p>
+
+            <p>
+                &emsp;&emsp;Приглашаются и дети, и взрослые!<br>
+                &emsp;&emsp;Данное сообщение считать официальным положением и приглашением на фестиваль.<br>
+                &emsp;&emsp;Всем удачи и хорошего настроения,<br>
+                &emsp;&emsp;С уважением, Грунковский Юрий, руководитель детского Го-клуба " Каменный дракон".<br>
+            </p>
+        </div>
+    </div>
+</div>
+
+<script type='text/x-jquery-tmpl' id='t_12221'>
+  <tr>
+    <td>${place}</td>
+    <td>${player}</td>
+    <td>${city}</td>
+    <td>${rank}</td>
+    <td>${score}</td>
+    <td>${game1}</td>
+    <td>${game2}</td>
+    <td>${game3}</td>
+    <td>${game4}</td>
+    <td>${game5}</td>
+    <td>${total}</td>
+    <td>${sos}</td>
+    <td>${sdos}</td>
+  </tr>
+</script>
+
+<script type='text/x-jquery-tmpl' id='t_12222'>
+  <tr>
+    <td>${place}</td>
+    <td>${player}</td>
+    <td>${city}</td>
+    <td>${rank}</td>
+    <td>${score}</td>
+    <td>${game1}</td>
+    <td>${game2}</td>
+    <td>${game3}</td>
+    <td>${game4}</td>
+    <td>${total}</td>
+    <td>${sos}</td>
+    <td>${sdos}</td>
+  </tr>
+</script>
