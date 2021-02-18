@@ -38,8 +38,8 @@ require_once 'php/lang/lang_index_' . $_SESSION['lang'] . '.php';
         current_slider_photos = get_photos();
         $("#index_slider").load("pages/blocks/t_index_slider.html");
 
-        get_tournaments('2020');
-        get_news('2020');
+        get_tournaments('2021');
+        get_news('2021');
 
     });
 </script>
@@ -88,12 +88,12 @@ require_once 'php/lang/lang_index_' . $_SESSION['lang'] . '.php';
             url: 'php/read_news.php',
             type: 'POST',
             cache: false,
-            data: {'year': '2020', 'type': 'tournament',
+            data: {'year': year, 'type': 'tournament',
                 'is_finished': 'ALL'},
             dataType: 'json',
             success: function (data) {
-                tournaments_2020.splice(0);
-                tournaments_2020 = data;
+                tournaments_2021.splice(0);
+                tournaments_2021 = data;
                 $("#main_tournaments_id").load("pages/index/index_tournaments.html");
             }
         });
@@ -104,12 +104,12 @@ require_once 'php/lang/lang_index_' . $_SESSION['lang'] . '.php';
             url: 'php/read_news.php',
             type: 'POST',
             cache: false,
-            data: {'year': '2020', 'type': 'ALL',
+            data: {'year': year, 'type': 'ALL',
                 'is_finished': 'finished'},
             dataType: 'json',
             success: function (data) {
-                news_2020.splice(0);
-                news_2020 = data;
+                news_2021.splice(0);
+                news_2021 = data;
                 $("#main_news_id").load("pages/index/index_news.php");
             }
         });

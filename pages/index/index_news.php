@@ -21,11 +21,11 @@
 
     function load_data() {
         $('#news_list').empty();
-        for (let i = news_2020.length - 1; i >= 0; i--) {
-            if (news_2020[i].type == 'tournament') {
-                $('#news_template').tmpl(news_2020[i]).appendTo('#news_list');
+        for (let i = news_2021.length - 1; i >= 0; i--) {
+            if (news_2021[i].type == 'tournament') {
+                $('#news_template').tmpl(news_2021[i]).appendTo('#news_list');
             } else {
-                $('#match_template').tmpl(news_2020[i]).appendTo('#news_list');
+                $('#match_template').tmpl(news_2021[i]).appendTo('#news_list');
             }
         }
     }

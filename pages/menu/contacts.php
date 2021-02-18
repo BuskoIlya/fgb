@@ -59,8 +59,10 @@
       <p style="line-height:1.5"><small>${position}</small></p>
       <p><small><i>${phone}</i></small></p>
       <p><small><i>${mail}</i></small></p>
-      <a href="${vk}"><img src='../../img/icons/vk.jpg' class="vk_icon_css"></img></a>
+
     </p>
   </div>
   </div>
 </script>
+
+<!--a href="${vk}"><img src='../../img/icons/vk.jpg' class="vk_icon_css"></img></a-->

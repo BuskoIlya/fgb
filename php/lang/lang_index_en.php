@@ -1,6 +1,6 @@
 <?php
 $Lang_index = array(
-    'run_line' => 'Happy new year 2021 and christmas!',
+    'run_line' => '"Clever Stork" tournament will be held on February 20!',
 
     '2019_02_16' => 'Chinese Consul Cup in St. Petersburg 2019',
     '2019_03_30' => 'Minsk Cup 2019',
@@ -18,7 +18,7 @@ $Lang_index = array(
     '2020_12_22' => '10th Christmas Tournament',
 
     'news_title' => 'News',
-    'tournaments_title' => 'Tournaments 2020'
+    'tournaments_title' => 'Tournaments 2021'
 
 );
 ?>
