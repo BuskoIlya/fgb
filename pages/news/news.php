@@ -27,14 +27,16 @@
                 <div>
                     <div class="tabs_panel_col" style="margin-right: 0">
                         <div class="tabs_menu">
-                            <div class="active"><span class="light"></span><span>2020</span></div>
+                            <div class="active"><span class="light"></span><span>2021</span></div>
+                            <div><span class="light"></span><span>2020</span></div>
                             <div><span class="light"></span><span>2019</span></div>
                             <div><span class="light"></span><span>2018</span></div>
                         </div>
                     </div>
                     <div class="tabs_panel_col" style="margin-left: 0; border-left: 1px solid #f3f3f3">
                         <ul class="tabs_data">
-                            <li id="2020_id" class="active" style="width:100%"></li>
+                            <li id="2021_id" class="active" style="width:100%"></li>
+                            <li id="2020_id" style="width:100%"></li>
                             <li id="2019_id" style="width:100%"></li>
                             <li id="2018_id" style="width:100%"></li>
                         </ul>
@@ -55,6 +57,29 @@
 
 <script type="text/javascript">
     $(document).ready(function () {
+        $.ajax({
+            url: '../../php/read_news.php',
+            type: 'POST',
+            cache: false,
+            data: {
+                'year': '2021', 'type': 'ALL',
+                'is_finished': 'finished'
+            },
+            dataType: 'json',
+            success: function (data) {
+                news_2021 = data;
+                for (let i = 0; i < news_2021.length; i++) {
+                    if (news_2021[i].type == 'match') {
+                        $('#match_template').tmpl(news_2021[i]).appendTo('#2021_id');
+                    } else {
+                        $('#news_template').tmpl(news_2021[i]).appendTo('#2021_id');
+                    }
+                }
+                setTimeout(function () {
+                    show_tabs_data();
+                }, 200);
+            }
+        });
         $.ajax({
             url: '../../php/read_news.php',
             type: 'POST',

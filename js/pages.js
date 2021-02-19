@@ -10,6 +10,7 @@ var eu_20_21_b = [];
 var eu_20_21_c = [];
 var eu_20_21_d = [];
 
+var news_2021 = [];
 var news_2020 = [];
 var news_2019 = [];
 var news_2018 = [];

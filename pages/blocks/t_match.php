@@ -18,7 +18,7 @@
       <a href="${www_ref}">Ссылка на сайт матча ${ref_name}</a>
       <br>
       <br>
-      <a href="../../world/eu_19_20.php">Страница лиги D</a>
+      <a href="../../world/eu_20_21.php">Страница лиги D</a>
     </p>
   </div>
   <div class="match_item_info_css row">
